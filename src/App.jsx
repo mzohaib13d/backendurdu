@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import usePreventDevTools from "./hooks/usePreventDevTools";
 import HomeUrdu from "./pages/HomeUrdu";
 import Week1Class2 from "./pages/Week1Class2";
 import Week2Class1 from "./pages/Week2Class1";
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <BrowserRouter>
+     usePreventDevTools();
       {/* Simple Green Mouse Trail */}
       <MouseTrail enabled={showMouseTrail} />
       
