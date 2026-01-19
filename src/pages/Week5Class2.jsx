@@ -241,7 +241,7 @@ const accessToken = jwt.sign(
                 <Lock className="w-6 h-6 text-blue-600" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-1 text-right leading-normal">
+                <h3 className="text-2xl font-bold text-gray-800 mb-1 text-right leading-normal" dir="rtl">
                   1. Authentication کیا ہے؟
                 </h3>
                 <p className="text-gray-600">
@@ -278,10 +278,10 @@ const accessToken = jwt.sign(
               </ul>
             </div>
 
-            <div className="mt-4 p-3 bg-white rounded-lg border border-blue-300">
+            <div className="mt-4 p-3 bg-white rounded-lg border border-blue-300 leading-relaxed">
               <p className="text-gray-700">
-                <span className="font-bold">حقیقی زندگی کی مثال:</span> اپنی
-                شناخت ثابت کرنے کے لیے اپنا شناختی کارڈ دکھانا۔
+                <span className="font-bold"><p className="text-right" dir="rtl">حقیقی زندگی کی مثال:</p></span><p dir="rtl"> اپنی
+                شناخت ثابت کرنے کے لیے اپنا شناختی کارڈ دکھانا۔</p>
               </p>
             </div>
           </div>
@@ -293,10 +293,10 @@ const accessToken = jwt.sign(
                 <Shield className="w-6 h-6 text-purple-600" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-gray-800 mb-1 text-right leading-normal">
+                <h2 className="text-2xl font-bold text-gray-800 mb-1 text-right leading-normal" dir="rtl">
                   📌 2. اجازت کیا ہے؟
                 </h2>
-                <p className="text-gray-600">
+                <p className="text-gray-600" dir="rtl">
                   Authorization وہ عمل ہے جو فیصلہ کرتا ہے کہ صارف کس تک رسائی
                   حاصل کر سکتا ہے۔
                 </p>
@@ -332,8 +332,8 @@ const accessToken = jwt.sign(
             </div>
 
             <div className="mt-4 p-3 bg-white rounded-lg border border-purple-300">
-              <p className="text-gray-700">
-                <span className="font-bold">حقیقی زندگی کی مثال:</span> آپ عمارت
+              <p className="text-gray-700" dir="rtl">
+                <span className="font-bold"><p className="text-right" dir="rtl">حقیقی زندگی کی مثال:</p></span> آپ عمارت
                 میں داخل ہو سکتے ہیں (تصدیق شدہ)، لیکن صرف کچھ کمرے اجازت شدہ
                 ہیں (مجاز)۔
               </p>
@@ -343,7 +343,7 @@ const accessToken = jwt.sign(
 
         {/* موازنہ ٹیبل */}
         <section className="bg-white rounded-2xl shadow-xl p-6 mb-10 border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2" dir="rtl">
             🔁 تصدیق بمقابلہ اجازت
           </h2>
 
@@ -426,7 +426,7 @@ const accessToken = jwt.sign(
 
         {/* Authentication طریقے */}
         <section className="mb-10">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent leading-relaxed">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent leading-relaxed" dir="rtl">
             🔑 تصدیق کے طریقے (اقسام)
           </h2>
 
@@ -473,7 +473,7 @@ const accessToken = jwt.sign(
 
         {/* کوڈ نمونے */}
         <section className="mb-10">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent" dir="rtl"> 
             💻 کوڈ نمونے اور نفاذ
           </h2>
 
@@ -526,7 +526,7 @@ const accessToken = jwt.sign(
 
         {/* سیکورٹی خطرات */}
         <section className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl shadow-xl p-8 mb-10 border border-red-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2" dir="rtl">
             <AlertTriangle className="w-6 h-6 text-red-600" />
             🔥 عام سیکورٹی خطرات
           </h2>
@@ -585,7 +585,7 @@ const accessToken = jwt.sign(
         />
         {/* سمری ٹیبل */}
         <section className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-xl p-8 mb-8 text-white">
-          <h2 className="leading-relaxed text-2xl font-bold mb-6 text-center bg-gradient-to-r from-red-400 to-orange-300 bg-clip-text text-transparent">
+          <h2 className="leading-relaxed text-2xl font-bold mb-6 text-center bg-gradient-to-r from-red-400 to-orange-300 bg-clip-text text-transparent" dir="rtl">
             🧾 خلاصہ جدول
           </h2>
 
@@ -622,7 +622,7 @@ const accessToken = jwt.sign(
 
         {/* Express میں تصدیق کا جائزہ */}
         <section className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl shadow-xl p-8 border border-blue-300">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4" dir="rtl">
             🔐 Express میں تصدیق اور سیکورٹی
           </h2>
           <p className="text-gray-700 mb-6 text-lg">

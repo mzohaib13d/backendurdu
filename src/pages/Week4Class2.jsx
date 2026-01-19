@@ -138,7 +138,7 @@ export default function Week4Class2() {
         <h2 className="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4 text-right">
           🧠 1. Introduction
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-3 sm:mb-4 text-right text-base sm:text-lg">
+        <p className="text-gray-700 leading-relaxed mb-3 sm:mb-4 text-right text-base sm:text-lg" dir="rtl">
           MongoDB آپ کو ڈیٹا کو فلٹر کرنے اور سرچ کرنے کی طاقتور صلاحیت دیتی ہے۔
         </p>
 
@@ -720,25 +720,25 @@ export default mongoose.model<IProduct>("Product", productSchema);`}
 
       {/* Hands-On Section */}
       <section className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl sm:rounded-2xl p-4 sm:p-8 border-2 border-dashed border-blue-300 mb-6 sm:mb-8">
-        <h2 className="text-xl sm:text-3xl font-bold text-blue-700 mb-4 sm:mb-6 text-center">
-          🏗️ Hands-On: Build a RESTful API with MongoDB and TypeScript
-        </h2>
-        <p className="text-base sm:text-xl text-gray-700 mb-4 sm:mb-8 text-center">
-          اب آپ MongoDB کی طاقتور کوئریز کو عملی شکل دیں!
-        </p>
-        
-        <div className="bg-white p-4 sm:p-6 rounded-xl shadow">
-          <h3 className="text-lg sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4 text-right">
-            عملی کام:
-          </h3>
-          <div className="space-y-4 sm:space-y-6">
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 sm:p-4 bg-blue-50 rounded-xl">
-              <div className="mb-2 sm:mb-0">
-                <h4 className="font-bold text-gray-800 mb-1 sm:mb-2 text-right text-sm sm:text-base">1. Product API بنائیں</h4>
-                <p className="text-gray-600 text-right text-xs sm:text-sm">CRUD آپریشنز کے ساتھ</p>
-              </div>
-              <button
-                onClick={() => handleCopy(`// Product Controller Example
+  <h2 className="text-xl sm:text-3xl font-bold text-blue-700 mb-4 sm:mb-6 text-center">
+    🏗️ Hands-On: Build a RESTful API with MongoDB and TypeScript
+  </h2>
+  <p className="text-base sm:text-xl text-gray-700 mb-4 sm:mb-8 text-center" dir="rtl">
+    اب آپ MongoDB کی طاقتور کوئریز کو عملی شکل دیں!
+  </p>
+  
+  <div className="bg-white p-4 sm:p-6 rounded-xl shadow">
+    <h3 className="text-lg sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4 text-right">
+      عملی کام:
+    </h3>
+    <div className="space-y-4 sm:space-y-6">
+      
+      {/* 1. Product API */}
+      <div className="bg-white p-3 sm:p-4 rounded-xl border border-blue-200 shadow-sm">
+        <div className="flex justify-between items-center mb-3">
+          <h4 className="font-bold text-gray-800 text-right text-sm sm:text-base">1. Product API بنائیں</h4>
+          <button
+            onClick={() => handleCopy(`// Product Controller Example
 import { Request, Response } from 'express';
 import Product from '../models/Product';
 
@@ -750,29 +750,46 @@ export const getProducts = async (req: Request, res: Response) => {
     res.status(500).json({ message: 'Server error' });
   }
 };`, "productApi")}
-                className="flex items-center justify-center gap-1 sm:gap-2 bg-blue-600 hover:bg-blue-700 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm cursor-pointer w-full sm:w-auto mt-2 sm:mt-0"
-              >
-                {copiedStates.productApi ? (
-                  <>
-                    <Check className="size-4 sm:size-5" />
-                    <span>کاپی ہو گیا</span>
-                  </>
-                ) : (
-                  <>
-                    <Copy className="size-4 sm:size-5" />
-                    <span>مثال کاپی کریں</span>
-                  </>
-                )}
-              </button>
-            </div>
+            className="flex items-center justify-center gap-1 sm:gap-2 bg-blue-600 hover:bg-blue-700 text-white px-3 sm:px-4 py-1 sm:py-1.5 rounded-lg transition-colors text-xs sm:text-sm cursor-pointer"
+          >
+            {copiedStates.productApi ? (
+              <>
+                <Check className="size-3 sm:size-4" />
+                <span>کاپی ہو گیا</span>
+              </>
+            ) : (
+              <>
+                <Copy className="size-3 sm:size-4" />
+                <span>مثال کاپی کریں</span>
+              </>
+            )}
+          </button>
+        </div>
+        <p className="text-gray-600 text-right text-xs sm:text-sm mb-3" dir="rtl">CRUD آپریشنز کے ساتھ</p>
+        <div className="bg-gray-900 p-3 sm:p-4 rounded-lg overflow-x-auto">
+          <pre className="text-green-400 text-xs sm:text-sm">
+{`// Product Controller Example
+import { Request, Response } from 'express';
+import Product from '../models/Product';
 
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 sm:p-4 bg-green-50 rounded-xl">
-              <div className="mb-2 sm:mb-0">
-                <h4 className="font-bold text-gray-800 mb-1 sm:mb-2 text-right text-sm sm:text-base">2. Advanced Filters شامل کریں</h4>
-                <p className="text-gray-600 text-right text-xs sm:text-sm">قیمت، زمرہ، دستیابی کے مطابق</p>
-              </div>
-              <button
-                onClick={() => handleCopy(`// Advanced Filtering Example
+export const getProducts = async (req: Request, res: Response) => {
+  try {
+    const products = await Product.find();
+    res.json(products);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+};`}
+          </pre>
+        </div>
+      </div>
+
+      {/* 2. Advanced Filters */}
+      <div className="bg-white p-3 sm:p-4 rounded-xl border border-green-200 shadow-sm">
+        <div className="flex justify-between items-center mb-3">
+          <h4 className="font-bold text-gray-800 text-right text-sm sm:text-base">2. Advanced Filters شامل کریں</h4>
+          <button
+            onClick={() => handleCopy(`// Advanced Filtering Example
 const getFilteredProducts = async (req: Request, res: Response) => {
   const { minPrice, maxPrice, category, inStock } = req.query;
   
@@ -790,29 +807,52 @@ const getFilteredProducts = async (req: Request, res: Response) => {
   const products = await Product.find(filter);
   res.json(products);
 };`, "filterApi")}
-                className="flex items-center justify-center gap-1 sm:gap-2 bg-green-600 hover:bg-green-700 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm cursor-pointer w-full sm:w-auto mt-2 sm:mt-0"
-              >
-                {copiedStates.filterApi ? (
-                  <>
-                    <Check className="size-4 sm:size-5" />
-                    <span>کاپی ہو گیا</span>
-                  </>
-                ) : (
-                  <>
-                    <Copy className="size-4 sm:size-5" />
-                    <span>مثال کاپی کریں</span>
-                  </>
-                )}
-              </button>
-            </div>
+            className="flex items-center justify-center gap-1 sm:gap-2 bg-green-600 hover:bg-green-700 text-white px-3 sm:px-4 py-1 sm:py-1.5 rounded-lg transition-colors text-xs sm:text-sm cursor-pointer"
+          >
+            {copiedStates.filterApi ? (
+              <>
+                <Check className="size-3 sm:size-4" />
+                <span>کاپی ہو گیا</span>
+              </>
+            ) : (
+              <>
+                <Copy className="size-3 sm:size-4" />
+                <span>مثال کاپی کریں</span>
+              </>
+            )}
+          </button>
+        </div>
+        <p className="text-gray-600 text-right text-xs sm:text-sm mb-3" dir="rtl">قیمت، زمرہ، دستیابی کے مطابق</p>
+        <div className="bg-gray-900 p-3 sm:p-4 rounded-lg overflow-x-auto">
+          <pre className="text-green-400 text-xs sm:text-sm">
+{`// Advanced Filtering Example
+const getFilteredProducts = async (req: Request, res: Response) => {
+  const { minPrice, maxPrice, category, inStock } = req.query;
+  
+  const filter: any = {};
+  
+  if (minPrice || maxPrice) {
+    filter.price = {};
+    if (minPrice) filter.price.$gte = Number(minPrice);
+    if (maxPrice) filter.price.$lte = Number(maxPrice);
+  }
+  
+  if (category) filter.category = category;
+  if (inStock !== undefined) filter.inStock = inStock === 'true';
+  
+  const products = await Product.find(filter);
+  res.json(products);
+};`}
+          </pre>
+        </div>
+      </div>
 
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 sm:p-4 bg-purple-50 rounded-xl">
-              <div className="mb-2 sm:mb-0">
-                <h4 className="font-bold text-gray-800 mb-1 sm:mb-2 text-right text-sm sm:text-base">3. Pagination اور Sorting</h4>
-                <p className="text-gray-600 text-right text-xs sm:text-sm">صارف دوست ڈیٹا presentation</p>
-              </div>
-              <button
-                onClick={() => handleCopy(`// Pagination and Sorting Example
+      {/* 3. Pagination and Sorting */}
+      <div className="bg-white p-3 sm:p-4 rounded-xl border border-purple-200 shadow-sm">
+        <div className="flex justify-between items-center mb-3">
+          <h4 className="font-bold text-gray-800 text-right text-sm sm:text-base">3. Pagination اور Sorting</h4>
+          <button
+            onClick={() => handleCopy(`// Pagination and Sorting Example
 const getPaginatedProducts = async (req: Request, res: Response) => {
   const page = parseInt(req.query.page as string) || 1;
   const limit = parseInt(req.query.limit as string) || 10;
@@ -835,24 +875,53 @@ const getPaginatedProducts = async (req: Request, res: Response) => {
     totalProducts: total
   });
 };`, "paginationApi")}
-                className="flex items-center justify-center gap-1 sm:gap-2 bg-purple-600 hover:bg-purple-700 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm cursor-pointer w-full sm:w-auto mt-2 sm:mt-0"
-              >
-                {copiedStates.paginationApi ? (
-                  <>
-                    <Check className="size-4 sm:size-5" />
-                    <span>کاپی ہو گیا</span>
-                  </>
-                ) : (
-                  <>
-                    <Copy className="size-4 sm:size-5" />
-                    <span>مثال کاپی کریں</span>
-                  </>
-                )}
-              </button>
-            </div>
-          </div>
+            className="flex items-center justify-center gap-1 sm:gap-2 bg-purple-600 hover:bg-purple-700 text-white px-3 sm:px-4 py-1 sm:py-1.5 rounded-lg transition-colors text-xs sm:text-sm cursor-pointer"
+          >
+            {copiedStates.paginationApi ? (
+              <>
+                <Check className="size-3 sm:size-4" />
+                <span>کاپی ہو گیا</span>
+              </>
+            ) : (
+              <>
+                <Copy className="size-3 sm:size-4" />
+                <span>مثال کاپی کریں</span>
+              </>
+            )}
+          </button>
         </div>
-      </section>
+        <p className="text-gray-600 text-right text-xs sm:text-sm mb-3" dir="rtl">صارف دوست ڈیٹا presentation</p>
+        <div className="bg-gray-900 p-3 sm:p-4 rounded-lg overflow-x-auto">
+          <pre className="text-green-400 text-xs sm:text-sm">
+{`// Pagination and Sorting Example
+const getPaginatedProducts = async (req: Request, res: Response) => {
+  const page = parseInt(req.query.page as string) || 1;
+  const limit = parseInt(req.query.limit as string) || 10;
+  const sortBy = req.query.sortBy as string || 'createdAt';
+  const sortOrder = req.query.sortOrder === 'desc' ? -1 : 1;
+  
+  const skip = (page - 1) * limit;
+  
+  const products = await Product.find()
+    .sort({ [sortBy]: sortOrder })
+    .skip(skip)
+    .limit(limit);
+    
+  const total = await Product.countDocuments();
+  
+  res.json({
+    products,
+    page,
+    totalPages: Math.ceil(total / limit),
+    totalProducts: total
+  });
+};`}
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Navigation */}
       <div className="flex flex-col sm:flex-row justify-between items-center mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-300 space-y-3 sm:space-y-0">

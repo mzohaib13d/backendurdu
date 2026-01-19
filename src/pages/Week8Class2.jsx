@@ -55,11 +55,11 @@ export default function Week8Class2() {
         <header className="mb-8 md:mb-12 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Rocket className="w-10 h-10 text-orange-600" />
-            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+            <h1 className=" py-5 md:py-6 text-2xl md:text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent" dir="rtl">
               Backend Applications کی ڈپلائمنٹ (بنیادی)
             </h1>
           </div>
-          <p className="text-gray-600 text-base md:text-xl px-2">
+          <p className="text-gray-600 text-base md:text-xl px-2" dir="rtl">
             اپنی API کو آن لائن لائیں تاکہ ہر کوئی استعمال کر سکے
           </p>
         </header>
@@ -118,20 +118,20 @@ export default function Week8Class2() {
               {/* 🚀 تعارف - ایپ ڈپلائمنٹ */}
               {activeSection === "introduction" && (
                 <div className="space-y-4 md:space-y-6">
-                  <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                  <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6" dir="rtl">
                     <Rocket className="w-6 h-6 md:w-8 md:h-8 text-orange-600" />
-                    <h2 className="text-xl md:text-3xl font-bold text-gray-800">
+                    <h2 className="text-xl md:text-3xl font-bold text-gray-800 text-right" dir="rtl">
                       🚀 تعارف - ایپ ڈپلائمنٹ
                     </h2>
                   </div>
 
                   <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-4 md:p-6 mb-4 md:mb-6 border-l-4 border-orange-500">
-                    <p className="text-base md:text-lg text-gray-700 mb-3">
+                    <p className="text-base md:text-lg text-gray-700 mb-3" dir="rtl">
                       <strong>ڈپلائمنٹ</strong> وہ عمل ہے جس کے ذریعے آپ اپنی
                       ایپلیکیشن کو آن لائن لاتے ہیں تاکہ صارفین انٹرنیٹ پر اسے
                       استعمال کر سکیں۔
                     </p>
-                    <p className="text-base md:text-lg text-gray-700">
+                    <p className="text-base md:text-lg text-gray-700" dir="rtl">
                       بیک اینڈ ڈویلپر کے طور پر، آپ کو معلوم ہونا چاہیے:
                     </p>
                   </div>
@@ -208,15 +208,15 @@ export default function Week8Class2() {
               {/* 🌐 ڈپلائمنٹ کیا ہے؟ */}
               {activeSection === "deployment" && (
                 <div className="space-y-4 md:space-y-6">
-                  <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                  <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6" dir="rtl">
                     <Globe className="w-6 h-6 md:w-8 md:h-8 text-blue-600" />
-                    <h2 className="text-xl md:text-3xl font-bold text-gray-800">
+                    <h2 className="text-xl md:text-3xl font-bold text-gray-800" dir="rtl">
                       🌐 ڈپلائمنٹ کیا ہے؟
                     </h2>
                   </div>
 
                   <div className="bg-blue-50 rounded-xl p-4 md:p-6 mb-4 md:mb-6">
-                    <p className="text-base md:text-lg text-gray-700">
+                    <p className="text-base md:text-lg text-gray-700" dir="rtl">
                       <strong>ڈپلائمنٹ</strong> آپ کی ایپ کو لوکل مشین سے سرور
                       پر منتقل کرنے کا عمل ہے تاکہ یہ عوامی طور پر قابل رسائی ہو
                       سکے۔
@@ -274,10 +274,10 @@ export default function Week8Class2() {
                   </div>
 
                   <div className="bg-purple-50 p-4 md:p-6 rounded-xl">
-                    <h3 className="text-lg md:text-xl font-bold text-purple-800 mb-3">
+                    <h3 className="text-lg md:text-xl font-bold text-purple-800 mb-3" dir="rtl">
                       ⭐ ڈپلائمنٹ کی اہمیت
                     </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" dir="rtl">
                       {[
                         {
                           icon: "👥",
@@ -314,9 +314,9 @@ export default function Week8Class2() {
               {/* 💻 لوکل بمقابلہ پروڈکشن */}
               {activeSection === "environments" && (
                 <div className="space-y-4 md:space-y-6">
-                  <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                  <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6" dir="rtl">
                     <Server className="w-6 h-6 md:w-8 md:h-8 text-gray-600" />
-                    <h2 className="text-xl md:text-3xl font-bold text-gray-800">
+                    <h2 className="text-xl md:text-3xl font-bold text-gray-800" dir="rtl">
                       💻 لوکل بمقابلہ پروڈکشن
                     </h2>
                   </div>
@@ -425,7 +425,7 @@ export default function Week8Class2() {
                   </div>
 
                   <div className="bg-green-50 rounded-xl p-4 md:p-6 mb-4 md:mb-6">
-                    <p className="text-base md:text-lg text-gray-700">
+                    <p className="text-base md:text-lg text-gray-700" dir="rtl">
                       ماحولیاتی متغیرات API keys اور ڈیٹا بیس credentials جیسے
                       حساس ڈیٹا کو کوڈ میں ظاہر کیے بغیر محفوظ کرنے میں مدد
                       کرتے ہیں۔
@@ -450,10 +450,10 @@ EMAIL_PASS=emailpassword`}
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
-                      <h3 className="text-lg md:text-xl font-bold text-blue-800 mb-3">
+                      <h3 className="text-lg md:text-xl font-bold text-blue-800 mb-3" dir="rtl">
                         ✅ فوائد
                       </h3>
-                      <ul className="space-y-2 text-sm md:text-base">
+                      <ul className="space-y-2 text-sm md:text-base" dir="rtl">
                         <li className="flex items-start gap-2">
                           <Shield className="w-5 h-5 text-blue-600 mt-0.5" />
                           <span>Credentials محفوظ رکھتا ہے</span>
@@ -471,14 +471,14 @@ EMAIL_PASS=emailpassword`}
                     </div>
 
                     <div className="bg-red-50 p-4 md:p-6 rounded-xl">
-                      <h3 className="text-lg md:text-xl font-bold text-red-800 mb-3">
+                      <h3 className="text-lg md:text-xl font-bold text-red-800 mb-3" dir="rtl">
                         ⚠️ اہم نوٹ
                       </h3>
                       <div className="bg-white p-3 md:p-4 rounded-lg">
-                        <p className="font-bold text-red-600 mb-2">
+                        <p className="font-bold text-red-600 mb-2" dir="rtl">
                           ہمیشہ .env کو .gitignore میں شامل کریں
                         </p>
-                        <code className="block bg-gray-100 p-2 rounded text-sm font-mono">
+                        <code className="block bg-gray-100 p-2 rounded text-sm font-mono" dir="rtl">
                           # .gitignore میں شامل کریں
                           <br />
                           .env
@@ -522,12 +522,12 @@ const mongoURI = process.env.MONGO_URI;`}
 
                   <div className="space-y-6">
                     {/* Render */}
-                    <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 md:p-6 rounded-xl border border-green-200">
+                    <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 md:p-6 rounded-xl border border-green-200" dir="rtl">
                       <div className="flex items-center gap-2 md:gap-3 mb-3">
-                        <div className="w-8 h-8 md:w-10 md:h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                        <div className="w-8 h-8 md:w-10 md:h-10 bg-green-100 rounded-lg flex items-center justify-center text-right" dir="ltr">
                           <span className="font-bold text-green-600">1️⃣</span>
                         </div>
-                        <h3 className="text-lg md:text-xl font-bold text-green-800">
+                        <h3 className="text-lg md:text-xl font-bold text-green-800" dir="rtl">
                           Render
                         </h3>
                       </div>
@@ -535,7 +535,7 @@ const mongoURI = process.env.MONGO_URI;`}
                         Node.js, Python وغیرہ کے لیے مفت بیک اینڈ ہوسٹنگ
                       </p>
                       <div className="space-y-2">
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2" dir="rtl">
                           <CheckCircle className="w-4 h-4 text-green-600" />
                           <span className="text-sm md:text-base">
                             GitHub سے آٹو ڈپلائمنٹ کی حمایت
@@ -548,8 +548,8 @@ const mongoURI = process.env.MONGO_URI;`}
                           </span>
                         </div>
                       </div>
-                      <div className="mt-4">
-                        <h4 className="font-bold text-gray-800 mb-2">
+                      <div className="mt-4" dir="rtl">
+                        <h4 className="font-bold text-gray-800 mb-2" dir="rtl">
                           📋 مراحل:
                         </h4>
                         <ol className="list-decimal list-inside space-y-1 text-sm md:text-base">
@@ -563,9 +563,9 @@ const mongoURI = process.env.MONGO_URI;`}
                     </div>
 
                     {/* Railway */}
-                    <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 md:p-6 rounded-xl border border-orange-200">
+                    <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 md:p-6 rounded-xl border border-orange-200" dir="rtl">
                       <div className="flex items-center gap-2 md:gap-3 mb-3">
-                        <div className="w-8 h-8 md:w-10 md:h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                        <div className="w-8 h-8 md:w-10 md:h-10 bg-orange-100 rounded-lg flex items-center justify-center" dir="ltr">
                           <span className="font-bold text-orange-600">2️⃣</span>
                         </div>
                         <h3 className="text-lg md:text-xl font-bold text-orange-800">
@@ -606,7 +606,7 @@ const mongoURI = process.env.MONGO_URI;`}
                     </div>
 
                     {/* Vercel */}
-                    <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 md:p-6 rounded-xl border border-purple-200">
+                    <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 md:p-6 rounded-xl border border-purple-200" dir="rtl">
                       <div className="flex items-center gap-2 md:gap-3 mb-3">
                         <div className="w-8 h-8 md:w-10 md:h-10 bg-purple-100 rounded-lg flex items-center justify-center">
                           <span className="font-bold text-purple-600">3️⃣</span>
@@ -654,13 +654,13 @@ const mongoURI = process.env.MONGO_URI;`}
                     </h2>
                   </div>
 
-                  <div className="bg-green-50 rounded-xl p-4 md:p-6 mb-4 md:mb-6">
-                    <p className="text-base md:text-lg text-gray-700">
+                  <div className="bg-green-50 rounded-xl p-4 md:p-6 mb-4 md:mb-6" dir="rtl">
+                    <p className="text-base md:text-lg text-gray-700" dir="rtl">
                       پروڈکشن کے لیے، کلاؤڈ ہوسٹڈ MongoDB استعمال کریں:
                     </p>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4" dir="rtl">
                     <div className="bg-white p-4 md:p-6 rounded-xl shadow border">
                       <h3 className="text-lg md:text-xl font-bold text-blue-800 mb-3">
                         ✅ فوائد
@@ -838,7 +838,7 @@ mongoose.connect(process.env.MONGO_URI, {
                     <h3 className="text-lg md:text-xl font-bold text-green-800 mb-3">
                       🎯 ڈپلائمنٹ کے بعد
                     </h3>
-                    <p className="text-base md:text-lg text-gray-700 mb-4">
+                    <p className="text-base md:text-lg text-gray-700 mb-4" dir="rtl">
                       ایک بار ڈپلائ ہونے کے بعد، آپ کی API لائیو ہو جاتی ہے اور
                       درج ذیل کے لیے قابل رسائی ہوتی ہے:
                     </p>

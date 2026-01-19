@@ -251,14 +251,24 @@ res.json({
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-3 md:p-6 font-urdu text-[13px] md:text-base leading-[1.4]">
-      {/* Mobile Success Toast */}
+      {/* Mobile Success Toast - Fixed width */}
       {showSuccess && (
-        <div 
-          className="fixed z-50 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-4 py-2 rounded-lg shadow-2xl flex items-center gap-2 animate-slide-in-right md:right-12 right-2 top-16 md:top-24"
-          style={{ left: `${successPosition.left}px`, top: `${successPosition.top}px`, transform: 'translateX(-50%)' }}
+        <div
+          className="fixed z-50 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-4 py-3 rounded-lg shadow-2xl flex items-center gap-2 animate-slide-in-right md:right-12 right-2 top-16 md:top-24"
+          style={{
+            left: `${successPosition.left}px`,
+            top: `${successPosition.top}px`,
+            transform: "translateX(-50%)",
+            width: "auto",
+            minWidth: "140px",
+            maxWidth: "200px",
+            whiteSpace: "nowrap"
+          }}
         >
-          <Check className="w-4 h-4" />
-          <span className="font-semibold text-xs md:text-sm">کوڈ کاپی ہو گیا!</span>
+          <Check className="w-4 h-4 flex-shrink-0" />
+          <span className="font-semibold text-sm">
+            کوڈ کاپی ہو گیا!
+          </span>
         </div>
       )}
 
@@ -266,13 +276,23 @@ res.json({
         {/* Compact Header */}
         <header className="mb-6 md:mb-10 text-center px-1 md:px-2">
           <div className="relative inline-block mb-3 md:mb-4">
-            <h1 className="py-2 px-2 md:px-4 text-lg md:text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 bg-clip-text text-transparent leading-tight md:leading-6">
+            <h1
+              className="py-5 md:py-6 px-2 md:px-4 text-lg md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 bg-clip-text text-transparent text-center"
+              style={{
+                lineHeight: "1.8",
+                wordBreak: "break-word",
+                whiteSpace: "normal",
+              }}
+            >
               📄 پیجینیشن، فلٹرنگ اور سارٹنگ
             </h1>
             <div className="relative top-2 md:top-3 w-full max-w-[240px] md:max-w-[280px] md:w-64 mx-auto h-1 md:h-1.5 rounded-full overflow-hidden">
               <div className="absolute h-full w-full bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 animate-progress-bar rounded-full"></div>
             </div>
-            <p className="py-1 md:py-2 text-sm md:text-base text-gray-700 font-medium mt-2 mb-1 md:mb-2" style={{ fontFamily: "Verdana, sans-serif" }}>
+            <p
+              className="py-1 md:py-2 text-sm md:text-base text-gray-700 font-medium mt-2 mb-1 md:mb-2"
+              style={{ fontFamily: "Verdana, sans-serif" }}
+            >
               Instructor: Zohaib Farooq
             </p>
             <div className="inline-block px-2 md:px-3 py-1 md:py-1.5 bg-gradient-to-r from-amber-100 to-orange-100 text-amber-800 rounded-full font-semibold text-xs md:text-sm border border-amber-200">
@@ -292,7 +312,8 @@ res.json({
                 🧠 تعارف
               </h2>
               <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-4 md:mb-0">
-                جب APIs بناتے ہیں جو بڑے ڈیٹاسیٹس واپس کرتی ہیں، تو ایک ساتھ سارا ڈیٹا بھیجنا غیر موثر ہوتا ہے۔
+                جب APIs بناتے ہیں جو بڑے ڈیٹاسیٹس واپس کرتی ہیں، تو ایک ساتھ
+                سارا ڈیٹا بھیجنا غیر موثر ہوتا ہے۔
               </p>
             </div>
           </div>
@@ -309,7 +330,9 @@ res.json({
                   className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg md:rounded-xl p-3 md:p-4 border border-amber-200 hover:shadow-md transition-shadow"
                 >
                   <div className="flex items-start gap-2 md:gap-3">
-                    <span className="text-xl md:text-2xl mt-1 flex-shrink-0">{need.icon}</span>
+                    <span className="text-xl md:text-2xl mt-1 flex-shrink-0">
+                      {need.icon}
+                    </span>
                     <div className="min-w-0">
                       <h4 className="font-bold text-amber-800 mb-1 text-sm md:text-base leading-tight">
                         {need.title}
@@ -339,7 +362,9 @@ res.json({
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-2 py-1">
                   <span className="text-amber-600 mt-1 flex-shrink-0">✓</span>
-                  <span className="text-gray-700 text-xs md:text-sm">{item}</span>
+                  <span className="text-gray-700 text-xs md:text-sm">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
@@ -355,12 +380,14 @@ res.json({
 
           <div className="bg-white rounded-lg md:rounded-xl p-4 md:p-5 mb-4 md:mb-6 border border-orange-300">
             <p className="text-gray-700 text-sm md:text-lg mb-3 md:mb-4 leading-relaxed">
-              APIs اکثر پیجینیشن، فلٹرنگ اور سارٹنگ کے لیے کوئری پیرامیٹرز قبول کرتی ہیں۔
+              APIs اکثر پیجینیشن، فلٹرنگ اور سارٹنگ کے لیے کوئری پیرامیٹرز قبول
+              کرتی ہیں۔
             </p>
 
             <div className="bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg md:rounded-lg p-3 md:p-4 mb-3 md:mb-4 overflow-hidden">
-              <code className="text-white font-mono text-sm md:text-lg font-bold block break-all">
-                GET /products?page=2&limit=5&search=جوتے&category=مرد&sort=price_desc
+              <code className="text-white font-mono text-sm md:text-lg font-bold block break-all text-left">
+                GET
+                /products?page=2&limit=5&search=جوتے&category=مرد&sort=price_desc
               </code>
             </div>
 
@@ -368,9 +395,15 @@ res.json({
               <table className="min-w-full bg-gray-50 rounded-lg md:rounded-lg overflow-hidden text-xs md:text-sm">
                 <thead className="bg-gradient-to-r from-amber-600 to-orange-500 text-white">
                   <tr>
-                    <th className="py-2 px-2 md:py-4 md:px-4 md:px-6 text-right font-bold text-xs md:text-lg">پیرامیٹر</th>
-                    <th className="py-2 px-2 md:py-4 md:px-4 md:px-6 text-right font-bold text-xs md:text-lg">معنی</th>
-                    <th className="py-2 px-2 md:py-4 md:px-4 md:px-6 text-right font-bold text-xs md:text-lg">مثال</th>
+                    <th className="py-2 px-2 md:py-4 md:px-4 md:px-6 text-right font-bold text-xs md:text-lg">
+                      پیرامیٹر
+                    </th>
+                    <th className="py-2 px-2 md:py-4 md:px-4 md:px-6 text-right font-bold text-xs md:text-lg">
+                      معنی
+                    </th>
+                    <th className="py-2 px-2 md:py-4 md:px-4 md:px-6 text-right font-bold text-xs md:text-lg">
+                      مثال
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -402,7 +435,14 @@ res.json({
 
         {/* تمام کوڈ سیکشنز - Single Column Mobile */}
         <section className="mb-8 md:mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 md:mb-8 text-center bg-gradient-to-r from-amber-600 to-red-500 bg-clip-text text-transparent px-2">
+          <h2 
+            className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 mb-6 md:mb-8 text-center bg-gradient-to-r from-amber-600 to-red-500 bg-clip-text text-transparent px-2 break-words"
+            style={{
+              lineHeight: '1.8',
+              wordBreak: 'break-word',
+              whiteSpace: 'normal'
+            }}
+          >
             💻 کوڈ نمونے اور نفاذ
           </h2>
 
@@ -413,7 +453,7 @@ res.json({
                 className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl overflow-hidden border border-gray-700 hover:border-amber-500 transition-all relative max-w-full"
               >
                 <div className="bg-gradient-to-r from-amber-600 to-red-500 px-3 md:px-6 py-3 md:py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 md:gap-0">
-                  <h3 className="text-lg md:text-xl font-bold text-white flex-1 pr-0 md:pr-2 truncate leading-tight">
+                  <h3 className="text-lg md:text-xl font-bold text-white flex-1 pr-0 md:pr-2 break-words leading-relaxed">
                     {section.title}
                   </h3>
                   <button
@@ -440,7 +480,11 @@ res.json({
                   </button>
                 </div>
                 <div className="p-4 md:p-6 max-h-96 md:max-h-80 overflow-y-auto">
-                  <pre className="text-gray-300 font-mono text-xs md:text-sm leading-relaxed overflow-x-auto bg-gray-900/50 p-3 md:p-4 rounded-lg">
+                  <pre 
+  className="text-gray-300 font-mono text-xs md:text-sm leading-relaxed overflow-x-auto bg-gray-900/50 p-3 md:p-4 rounded-lg"
+  dir={section.id === "best-practices" ? "rtl" : "ltr"}
+  style={section.id === "best-practices" ? { textAlign: "right" } : { textAlign: "left" }}
+>
                     {section.code}
                   </pre>
                 </div>
@@ -474,7 +518,7 @@ res.json({
                   {operator.purpose}
                 </h4>
                 <div className="bg-gray-900 rounded-lg p-2 md:p-2">
-                  <code className="text-red-300 font-mono text-xs md:text-sm">
+                  <code className="text-red-300 font-mono text-xs md:text-sm text-left" dir="ltr">
                     {operator.example}
                   </code>
                 </div>
@@ -484,7 +528,9 @@ res.json({
 
           <div className="mt-6 md:mt-8 p-4 md:p-5 bg-gradient-to-r from-red-100 to-pink-100 rounded-lg md:rounded-xl border border-red-300">
             <div className="flex items-start gap-3">
-              <div className="bg-red-500 text-white p-2 md:p-3 rounded-lg flex-shrink-0">📝</div>
+              <div className="bg-red-500 text-white p-2 md:p-3 rounded-lg flex-shrink-0">
+                📝
+              </div>
               <div>
                 <h4 className="font-bold text-gray-800 mb-2 md:mb-3 text-sm md:text-base">
                   پیجینیشن کی اہم اصطلاحات:
@@ -492,18 +538,26 @@ res.json({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 text-xs md:text-sm">
                   <div className="space-y-2">
                     <p>
-                      <span className="font-bold text-red-700">skip:</span> کتنے دستاویزات چھوڑنے ہیں
+                      <span className="font-bold text-red-700">skip:</span> کتنے
+                      دستاویزات چھوڑنے ہیں
                     </p>
                     <p>
-                      <span className="font-bold text-red-700">limit:</span> فی صفحہ کتنے دستاویزات
+                      <span className="font-bold text-red-700">limit:</span> فی
+                      صفحہ کتنے دستاویزات
                     </p>
                   </div>
                   <div className="space-y-2">
                     <p>
-                      <span className="font-bold text-red-700">totalPages:</span> صفحات کی کل تعداد
+                      <span className="font-bold text-red-700">
+                        totalPages:
+                      </span>{" "}
+                      صفحات کی کل تعداد
                     </p>
                     <p>
-                      <span className="font-bold text-red-700">totalItems:</span> اشیاء کی کل تعداد
+                      <span className="font-bold text-red-700">
+                        totalItems:
+                      </span>{" "}
+                      اشیاء کی کل تعداد
                     </p>
                   </div>
                 </div>
@@ -535,7 +589,9 @@ res.json({
                     <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white p-1.5 md:p-2 rounded-full mt-1 md:mt-0.5 flex-shrink-0">
                       <Check className="w-3 h-3 md:w-4 md:h-4" />
                     </div>
-                    <span className="text-gray-700 leading-relaxed">{benefit}</span>
+                    <span className="text-gray-700 leading-relaxed">
+                      {benefit}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -561,7 +617,9 @@ res.json({
               <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3 text-lg md:text-2xl">
                 ⚡
               </div>
-              <h4 className="font-bold text-amber-800 mb-1 text-sm md:text-base">کارکردگی</h4>
+              <h4 className="font-bold text-amber-800 mb-1 text-sm md:text-base">
+                کارکردگی
+              </h4>
               <p className="text-gray-700 text-xs md:text-sm">
                 بڑے ڈیٹا کو چھوٹے حصوں میں تقسیم کرتا ہے
               </p>
@@ -571,7 +629,9 @@ res.json({
               <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3 text-lg md:text-2xl">
                 🔍
               </div>
-              <h4 className="font-bold text-orange-800 mb-1 text-sm md:text-base">تلاش</h4>
+              <h4 className="font-bold text-orange-800 mb-1 text-sm md:text-base">
+                تلاش
+              </h4>
               <p className="text-gray-700 text-xs md:text-sm">
                 مطلوبہ ڈیٹا تک تیزی سے رسائی
               </p>
@@ -581,7 +641,9 @@ res.json({
               <div className="bg-gradient-to-r from-red-500 to-pink-500 text-white w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3 text-lg md:text-2xl">
                 📊
               </div>
-              <h4 className="font-bold text-red-800 mb-1 text-sm md:text-base">ترتیب</h4>
+              <h4 className="font-bold text-red-800 mb-1 text-sm md:text-base">
+                ترتیب
+              </h4>
               <p className="text-gray-700 text-xs md:text-sm">
                 ڈیٹا کو منطقی ترتیب میں پیش کرتا ہے
               </p>
@@ -591,14 +653,15 @@ res.json({
 
         {/* Footer */}
         <footer className="mt-10 md:mt-12 pt-6 md:pt-8 border-t border-gray-300 text-center text-gray-600 bg-white rounded-xl md:rounded-2xl shadow-sm md:shadow-xl p-6 md:p-8">
-          <p className="mb-2 md:mb-3 text-sm md:text-base">
+          <p className="mb-2 md:mb-3 text-sm md:text-base" dir="rtl">
             <span className="font-semibold bg-gradient-to-r from-amber-600 to-red-500 bg-clip-text text-transparent">
               ہفتہ 7 کلاس 2
             </span>{" "}
             | پیجینیشن، فلٹرنگ اور سارٹنگ
           </p>
           <p className="text-xs md:text-sm mb-3 md:mb-4">
-            تمام کوڈ نمونے پروڈکشن ریڈی ہیں اور براہ راست استعمال کیے جا سکتے ہیں
+            تمام کوڈ نمونے پروڈکشن ریڈی ہیں اور براہ راست استعمال کیے جا سکتے
+            ہیں
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 text-xs md:text-sm text-gray-500">
             <div className="flex items-center justify-center gap-1">
@@ -643,8 +706,12 @@ res.json({
         }
 
         @keyframes progress-bar {
-          0% { transform: translateX(-100%); }
-          100% { transform: translateX(100%); }
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
         }
 
         .animate-slide-in-right {
@@ -661,7 +728,8 @@ res.json({
           word-break: break-word;
         }
 
-        table td, table th {
+        table td,
+        table th {
           text-align: right;
         }
 

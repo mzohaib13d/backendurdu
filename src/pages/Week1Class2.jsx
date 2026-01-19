@@ -65,13 +65,13 @@ export default function Week1Class2() {
 
         {/* Introduction */}
         <section className="mb-8 sm:mb-12 bg-gradient-to-r from-blue-50 to-purple-50 p-3 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg mobile-section">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6 text-blue-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
+          <h2 className="text-right text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6 text-blue-800 flex items-center gap-2 sm:gap-3 mobile-section-title" >
             🧠 TypeScript کیا ہے؟
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed mobile-section-text" dir="rtl">
             TypeScript JavaScript کا ایک superset ہے جو static typing اور compile time پر ٹائپ چیکنگ کا اضافہ کرتا ہے۔
           </p>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 sm:mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 sm:mb-6 leading-relaxed mobile-section-text" dir="rtl">
             👉 یہ ڈویلپرز کو ابتدائی مرحلے پر ہی غلطیاں پکڑنے میں مدد کرتا ہے — کوڈ چلنے سے پہلے ہی۔
           </p>
           
@@ -91,7 +91,7 @@ age = "twenty five"; // 🚫 غلطی: Type 'string' کو type 'number' پر ass
           <div className="mt-6 p-4 sm:p-6 bg-green-100 border-l-4 border-green-500 rounded-xl mobile-highlight">
             <p className="text-green-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text">
               <span className="text-lg sm:text-2xl">✅</span>
-              <span>TypeScript یہ غلطی execution سے پہلے ہی پکڑ لیتا ہے، ٹائپ سیفٹی کو یقینی بناتا ہے۔</span>
+              <span dir="rtl">TypeScript یہ غلطی execution سے پہلے ہی پکڑ لیتا ہے، ٹائپ سیفٹی کو یقینی بناتا ہے۔</span>
             </p>
           </div>
         </section>
@@ -101,10 +101,10 @@ age = "twenty five"; // 🚫 غلطی: Type 'string' کو type 'number' پر ass
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6 text-green-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧩 بنیادی TypeScript Syntax
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             TypeScript آپ کو explicit types کے ساتھ variables declare کرنے دیتا ہے — جس سے آپ کا کوڈ محفوظ اور self-documenting ہو جاتا ہے۔
           </p>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             جب آپ کوئی value assign کرتے ہیں، تو TypeScript خود بخود اس کی type کا اندازہ لگا لیتا ہے۔ تاہم، بہتر clarity اور safety کے لیے، آپ explicit طور پر type define کر سکتے ہیں جیسا کہ نیچے دکھایا گیا ہے۔
           </p>
         </section>
@@ -114,7 +114,7 @@ age = "twenty five"; // 🚫 غلطی: Type 'string' کو type 'number' پر ass
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-orange-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧩 Primitive Types
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             Primitive types بنیادی ڈیٹا ٹائپس ہیں جو single value رکھتی ہیں۔ ان میں شامل ہیں: string, number, boolean, bigint, symbol, null, اور undefined۔
           </p>
           
@@ -143,7 +143,7 @@ futureValue2 = true;`}
                   <th className="p-2 sm:p-3 md:p-4 border border-gray-300 font-bold text-xs sm:text-sm md:text-base text-center mobile-table-header">مثال</th>
                 </tr>
               </thead>
-              <tbody className="text-xs sm:text-sm md:text-sm mobile-table-body">
+              <tbody className="text-xs sm:text-sm md:text-sm mobile-table-body" dir="rtl">
                 {[
                   ['string', 'ٹیکسٹ values کی نمائندگی کرتا ہے', '"Waqar", "Hello"'],
                   ['number', 'integers اور floating-point نمبروں کی نمائندگی کرتا ہے', '25, 3.14'],
@@ -170,7 +170,7 @@ futureValue2 = true;`}
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-red-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             ⚠️ any ٹائپ — احتیاط سے استعمال کریں
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             <code>any</code> TypeScript کو بتاتا ہے کہ اس variable کے لیے ٹائپ چیکنگ بند کر دے۔
           </p>
           
@@ -186,14 +186,14 @@ randomValue = true;    // ✅ ٹھیک ہے`}
           <div className="mt-6 p-4 sm:p-6 bg-red-100 border-l-4 border-red-500 rounded-xl mobile-highlight">
             <p className="text-red-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text">
               <span className="text-lg sm:text-2xl">💡</span>
-              <span>یہ JavaScript سے migration کے دوران یا جب ٹائپ نامعلوم ہو تو مفید ہے، لیکن اس سے بچنے کی کوشش کریں — یہ TypeScript استعمال کرنے کے مقصد کو ناکام کر دیتا ہے۔</span>
+              <span dir="rtl">یہ JavaScript سے migration کے دوران یا جب ٹائپ نامعلوم ہو تو مفید ہے، لیکن اس سے بچنے کی کوشش کریں — یہ TypeScript استعمال کرنے کے مقصد کو ناکام کر دیتا ہے۔</span>
             </p>
           </div>
         </section>
 
         {/* Safer Alternatives */}
         <section className="mb-8 sm:mb-12 bg-gradient-to-r from-blue-50 to-cyan-50 p-3 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg mobile-section">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-blue-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
+          <h2 dir="rtl" className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-blue-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧠 any کے محفوظ متبادل
           </h2>
           
@@ -206,7 +206,7 @@ randomValue = true;    // ✅ ٹھیک ہے`}
                   <th className="p-2 sm:p-3 md:p-4 border border-gray-300 font-bold text-xs sm:text-sm md:text-base text-center mobile-table-header">مثال</th>
                 </tr>
               </thead>
-              <tbody className="text-xs sm:text-sm md:text-sm mobile-table-body">
+              <tbody className="text-xs sm:text-sm md:text-sm mobile-table-body" dir="rtl">
                 {[
                   ['unknown', 'any کی طرح، لیکن استعمال کرنے سے پہلے ٹائپ چیکنگ کی ضرورت ہوتی ہے', 'نیچے ملاحظہ کریں'],
                   ['never', 'ایسی value کی نمائندگی کرتا ہے جو کبھی نہیں ہوتی', 'function throwError(): never'],
@@ -224,7 +224,7 @@ randomValue = true;    // ✅ ٹھیک ہے`}
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 mobile-grid">
             <div className="bg-white p-4 sm:p-6 rounded-xl shadow border border-blue-200 mobile-card">
-              <h4 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-blue-700 mobile-card-title">unknown ٹائپ کی مثال</h4>
+              <h4 dir="rtl" className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-blue-700 mobile-card-title">unknown ٹائپ کی مثال</h4>
               <CodeBlock
                 id="unknown-example"
                 title="unknown Type Example"
@@ -235,13 +235,13 @@ if (typeof value === "string") {
   console.log(value.toUpperCase()); // ✅ محفوظ
 }`}
               />
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text" dir="rtl">
                 <code>unknown</code> آپ کو استعمال کرنے سے پہلے ٹائپ چیک کرنے پر مجبور کرتا ہے — <code>any</code> کے برعکس۔
               </p>
             </div>
             
             <div className="bg-white p-4 sm:p-6 rounded-xl shadow border border-blue-200 mobile-card">
-              <h4 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-blue-700 mobile-card-title">never ٹائپ کی مثال</h4>
+              <h4 dir="rtl" className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-blue-700 mobile-card-title">never ٹائپ کی مثال</h4>
               <CodeBlock
                 id="never-example"
                 title="never Type Example"
@@ -250,7 +250,7 @@ if (typeof value === "string") {
   throw new Error(message);
 }`}
               />
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text" dir="rtl">
                 ایسے functions کے لیے استعمال ہوتا ہے جو کبھی value واپس نہیں کرتے (مثال کے طور پر، infinite loops یا errors والے functions)۔
               </p>
             </div>
@@ -259,13 +259,13 @@ if (typeof value === "string") {
 
         {/* Non-Primitive Types */}
         <section className="mb-8 sm:mb-12 bg-gradient-to-r from-purple-50 to-pink-50 p-3 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg mobile-section">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-purple-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
+          <h2 dir="rtl" className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-purple-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧱 TypeScript میں Non-Primitive (Reference) Types
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             Non-primitive types — جنہیں reference types بھی کہا جاتا ہے — وہ ڈیٹا ٹائپس ہیں جو references (میموری ایڈریسز) store کرتے ہیں بجائے actual value کو براہ راست store کرنے کے۔
           </p>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             اس کا مطلب ہے:
             جب آپ ایک non-primitive variable کو دوسرے variable پر assign کرتے ہیں، تو دونوں variables ایک ہی میموری location کی طرف اشارہ کرتے ہیں، separate copies کی طرف نہیں۔
           </p>
@@ -276,7 +276,7 @@ if (typeof value === "string") {
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-gray-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🔹 1. TypeScript میں Arrays
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             Array elements کی ایک ordered list ہے۔ JavaScript میں، array کسی بھی قسم کا ڈیٹا hold کر سکتی ہے، لیکن TypeScript میں، آپ define کر سکتے ہیں کہ array میں کس قسم کا ڈیٹا ہونا چاہیے — structure اور safety کا اضافہ کرتے ہوئے۔
           </p>
           
@@ -469,7 +469,7 @@ console.log(multiply(3, 4)); // 12`}
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-purple-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧱 4. Type Aliases
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             Type aliases آپ کو <code>type</code> keyword کے ساتھ custom reusable types بنانے دیتے ہیں۔ یہ اس وقت مفید ہے جب ایک ہی structure multiple times استعمال ہوتی ہے۔
           </p>
           
@@ -490,7 +490,7 @@ const user2: User = { name: "Sara", email: "sara@gmail.com", age: 21 };`}
           <div className="mt-6 p-4 sm:p-6 bg-purple-100 border-l-4 border-purple-500 rounded-xl mobile-highlight">
             <p className="text-purple-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text">
               <span className="text-lg sm:text-2xl">💡</span>
-              <span>یہ آپ کا کوڈ cleaner اور maintain کرنے میں آسان بناتا ہے۔</span>
+              <span><p dir="rtl" className="text-right">یہ آپ کا کوڈ cleaner اور maintain کرنے میں آسان بناتا ہے۔ </p></span>
             </p>
           </div>
         </section>
@@ -500,7 +500,7 @@ const user2: User = { name: "Sara", email: "sara@gmail.com", age: 21 };`}
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-teal-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧩 5. TypeScript میں Interfaces
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             ایک interface object کی shape define کرتا ہے۔ اسے contract کے طور پر سوچیں — اگر آپ interface استعمال کرتے ہیں، تو آپ کے object کو اس کے rules follow کرنے ہوں گے۔
           </p>
           
@@ -638,7 +638,7 @@ const admin: Admin = {
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-green-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧩 7. ٹائپ سیفٹی
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             ٹائپ سیفٹی کا مطلب ہے کہ TypeScript یقینی بناتا ہے کہ آپ صحیح ڈیٹا ٹائپس استعمال کریں۔ یہ bugs کو روکتا ہے اور کوڈ کی reliability کو بہتر بناتا ہے early mistakes کو پکڑ کر — کوڈ چلنے سے پہلے ہی۔
           </p>
           
@@ -674,7 +674,7 @@ console.log(multiply(5, 2)); // ✅ 10`}
           <div className="mt-6 p-4 sm:p-6 bg-green-100 border-l-4 border-green-500 rounded-xl mobile-highlight">
             <p className="text-green-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text">
               <span className="text-lg sm:text-2xl">⚙️</span>
-              <span>TypeScript ہر variable, argument, اور return type کو چیک کرتا ہے — آپ کو runtime surprises سے بچاتا ہے۔</span>
+              <span><p dir="rtl">TypeScript ہر variable, argument, اور return type کو چیک کرتا ہے — آپ کو runtime surprises سے بچاتا ہے۔</p></span>
             </p>
           </div>
         </section>
@@ -832,20 +832,20 @@ console.log(showResult(student1));`}
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-indigo-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             ⚙️ TypeScript کے ساتھ ایک سادہ Node.js سرور بنانا
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             اس سیکشن میں، آپ سیکھیں گے کہ Node.js اور TypeScript استعمال کرتے ہوئے اپنا پہلا backend سرور کیسے بنائیں اور چلائیں — zero سے running application تک۔
           </p>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             ہم cover کریں گے:
           </p>
           
           <ul className="list-disc pl-4 sm:pl-6 space-y-2 mb-6 mobile-section-text">
-            <li className="text-gray-800 text-sm sm:text-base md:text-lg">🧠 سرور دراصل کیا ہے؟</li>
-            <li className="text-gray-800 text-sm sm:text-base md:text-lg">⚙️ Node.js requests & responses کو کیسے handle کرتا ہے؟</li>
-            <li className="text-gray-800 text-sm sm:text-base md:text-lg">🪜 TypeScript استعمال کرتے ہوئے step-by-step سرور setup</li>
-            <li className="text-gray-800 text-sm sm:text-base md:text-lg">💻 مکمل explanation کے ساتھ example code</li>
-            <li className="text-gray-800 text-sm sm:text-base md:text-lg">📡 Routing, paths, اور JSON responses</li>
-            <li className="text-gray-800 text-sm sm:text-base md:text-lg">🧩 Bonus: Headers, ports, اور status codes کی تفہیم</li>
+            <li className="text-gray-800 text-sm sm:text-base md:text-lg" dir="rtl">🧠 سرور دراصل کیا ہے؟</li>
+            <li className="text-gray-800 text-sm sm:text-base md:text-lg" dir="rtl">⚙️ Node.js requests & responses کو کیسے handle کرتا ہے؟</li>
+            <li className="text-gray-800 text-sm sm:text-base md:text-lg" dir="rtl">🪜 TypeScript استعمال کرتے ہوئے step-by-step سرور setup</li>
+            <li className="text-gray-800 text-sm sm:text-base md:text-lg" dir="rtl">💻 مکمل explanation کے ساتھ example code</li>
+            <li className="text-gray-800 text-sm sm:text-base md:text-lg" dir="rtl">📡 Routing, paths, اور JSON responses</li>
+            <li className="text-gray-800 text-sm sm:text-base md:text-lg" dir="rtl">🧩 Bonus: Headers, ports, اور status codes کی تفہیم</li>
           </ul>
         </section>
 
@@ -857,8 +857,8 @@ console.log(showResult(student1));`}
           
           <div className="mb-6 p-4 sm:p-6 bg-yellow-100 border-l-4 border-yellow-500 rounded-xl mobile-highlight">
             <p className="text-yellow-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text">
-              <span className="text-lg sm:text-2xl">❓</span>
-              <span>عام الجھن: "کیا سرور ایک کمپیوٹر ہے یا پروگرام؟"</span>
+              <span className="text-lg sm:text-2xl" dir="rtl">❓</span>
+            <span className="text-right"><p dir="rtl" className="text-right">عام الجھن: "کیا سرور ایک کمپیوٹر ہے یا پروگرام؟"</p></span>
             </p>
           </div>
           
@@ -868,36 +868,36 @@ console.log(showResult(student1));`}
               <span>جواب: سرور دونوں کی طرف اشارہ کر سکتا ہے:</span>
             </p>
             <ul className="list-disc pl-4 sm:pl-6 mt-2 space-y-2">
-              <li className="text-green-800 text-sm sm:text-base"><strong>ہارڈویئر (کمپیوٹر)</strong> جو ڈیٹا کو store اور deliver کرتا ہے۔</li>
-              <li className="text-green-800 text-sm sm:text-base"><strong>سافٹ ویئر (پروگرام)</strong> جو requests کو سنتا ہے اور جواب دیتا ہے۔</li>
+              <li className="text-green-800 text-sm sm:text-base" dir="rtl"><strong>ہارڈویئر (کمپیوٹر)</strong> جو ڈیٹا کو store اور deliver کرتا ہے۔</li>
+              <li className="text-green-800 text-sm sm:text-base" dir="rtl"><strong>سافٹ ویئر (پروگرام)</strong> جو requests کو سنتا ہے اور جواب دیتا ہے۔</li>
             </ul>
           </div>
           
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text text-right" dir="rtl">
             تو جب ہم کہتے ہیں "Node.js میں سرور بنائیں"، ہمارا مطلب ہے ایک سرور پروگرام بنانا جو مشین پر چلتا ہے اور کلائنٹ کی requests کا جواب دیتا ہے۔
           </p>
           
           <div className="mb-6 p-4 sm:p-6 bg-blue-100 border-l-4 border-blue-500 rounded-xl mobile-highlight">
-            <h4 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-blue-700 mobile-subsection-title">🧠 سادہ تعریف:</h4>
-            <p className="text-blue-800 text-sm sm:text-base">
+            <h4 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-blue-700 mobile-subsection-title" dir="rtl">🧠 سادہ تعریف:</h4>
+            <p className="text-blue-800 text-sm sm:text-base" dir="rtl">
               ایک سرور ایک پروگرام ہے جو:
             </p>
             <ul className="list-disc pl-4 sm:pl-6 mt-2 space-y-1">
-              <li className="text-blue-800 text-sm sm:text-base">کلائنٹ کی requests کو سنتا ہے (جیسے browsers, mobile apps, یا APIs سے)</li>
-              <li className="text-blue-800 text-sm sm:text-base">ان requests کو process کرتا ہے</li>
-              <li className="text-blue-800 text-sm sm:text-base">ایک response واپس بھیجتا ہے — ڈیٹا, HTML, JSON, یا error messages</li>
+              <li className="text-blue-800 text-sm sm:text-base" dir="rtl">کلائنٹ کی requests کو سنتا ہے (جیسے browsers, mobile apps, یا APIs سے)</li>
+              <li className="text-blue-800 text-sm sm:text-base" dir="rtl">ان requests کو process کرتا ہے</li>
+              <li className="text-blue-800 text-sm sm:text-base" dir="rtl">ایک response واپس بھیجتا ہے — ڈیٹا, HTML, JSON, یا error messages</li>
             </ul>
           </div>
           
           <div className="mt-6">
-            <h4 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-purple-700 mobile-subsection-title">📝 مثال:</h4>
-            <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text">
+            <h4 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-purple-700 mobile-subsection-title" dir="rtl">📝 مثال:</h4>
+            <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text" dir="rtl">
               جب آپ <code>https://banoqabil.pk/</code> وزٹ کرتے ہیں:
             </p>
             <ol className="list-decimal pl-4 sm:pl-6 space-y-2 mb-4">
-              <li className="text-gray-800 text-sm sm:text-base md:text-lg">آپ کا براؤزر سرور کو ایک request بھیجتا ہے۔</li>
-              <li className="text-gray-800 text-sm sm:text-base md:text-lg">سرور اسے process کرتا ہے۔</li>
-              <li className="text-gray-800 text-sm sm:text-base md:text-lg">پھر ایک HTML صفحہ, JSON ڈیٹا, یا error response واپس بھیجتا ہے۔</li>
+              <li className="text-gray-800 text-sm sm:text-base md:text-lg" dir="rtl">آپ کا براؤزر سرور کو ایک request بھیجتا ہے۔</li>
+              <li className="text-gray-800 text-sm sm:text-base md:text-lg" dir="rtl">سرور اسے process کرتا ہے۔</li>
+              <li className="text-gray-800 text-sm sm:text-base md:text-lg" dir="rtl">پھر ایک HTML صفحہ, JSON ڈیٹا, یا error response واپس بھیجتا ہے۔</li>
             </ol>
           </div>
         </section>
@@ -907,7 +907,7 @@ console.log(showResult(student1));`}
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-green-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             ⚡ Node.js کے ساتھ سرور کیوں بنائیں؟
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             Node.js آپ کو JavaScript یا TypeScript استعمال کرتے ہوئے server-side applications بنانے دیتا ہے — وہی زبان جو frontend کے لیے استعمال ہوتی ہے۔
           </p>
           
@@ -1450,7 +1450,7 @@ server.listen(3000, () => {
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-teal-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             ⚙️ JSON Responses بھیجنا
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             اگر آپ structured data بھیجنا چاہتے ہیں (جیسے APIs)، تو JSON format استعمال کریں۔
           </p>
           
@@ -1470,7 +1470,7 @@ server.listen(3000, () => {
               <span className="text-lg sm:text-2xl">❓</span>
               <span><code>JSON.stringify()</code> کیوں استعمال کریں؟</span>
             </p>
-            <p className="text-teal-800 text-sm sm:text-base mt-2">
+            <p className="text-teal-800 text-sm sm:text-base mt-2" dir="rtl">
               کیونکہ <code>res.end()</code> method صرف text data بھیجتی ہے، objects نہیں۔ <code>JSON.stringify()</code> JavaScript object کو JSON string میں convert کرتی ہے جسے client سمجھ سکتا ہے۔
             </p>
           </div>
@@ -1493,7 +1493,7 @@ server.listen(3000, () => {
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-blue-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧰 Step 7: package.json میں Scripts شامل کریں
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             اپنی ایپ کو چلانے کو آسان بنانے کے لیے، اپنی <code>package.json</code> میں یہ scripts شامل کریں:
           </p>
           
@@ -1507,7 +1507,7 @@ server.listen(3000, () => {
 }`}
           />
           
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mt-4 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mt-4 leading-relaxed mobile-section-text" dir="rtl">
             اب آپ چلا سکتے ہیں:
           </p>
           <CodeBlock

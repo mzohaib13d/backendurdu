@@ -68,7 +68,7 @@ export default function Week2Class2() {
               Development
             </h1>
           </div>
-          <p className="text-gray-600 text-lg md:text-xl">
+          <p className="text-gray-600 text-lg md:text-xl" dir="rtl">
             مضبوط اور scalable backend applications کے لیے middleware کی مہارت
             حاصل کریں
           </p>
@@ -136,10 +136,10 @@ export default function Week2Class2() {
                   </div>
 
                   <div className="bg-blue-50 rounded-xl p-6 mb-6 border-l-4 border-blue-500">
-                    <p className="text-lg md:text-xl text-gray-700 mb-4">
+                    <p className="text-lg md:text-xl text-gray-700 mb-4" dir="rtl">
                       <strong>سادہ الفاظ میں:</strong>
                     </p>
-                    <p className="text-xl md:text-2xl font-semibold text-blue-700">
+                    <p className="text-xl md:text-2xl font-semibold text-blue-700" dir="rtl">
                       Middleware وہ فنکشنز ہیں جو request کے سرور میں آنے اور
                       response کے client کو بھیجنے کے درمیان execute ہوتے ہیں۔
                     </p>
@@ -179,7 +179,7 @@ export default function Week2Class2() {
                     </div>
 
                     <div className="bg-green-50 p-6 rounded-xl border border-green-200">
-                      <h3 className="text-xl font-bold text-green-800 mb-4">
+                      <h3 className="text-xl font-bold text-green-800 mb-4" dir="rtl">
                         ہر middleware function کی رسائی ہوتی ہے:
                       </h3>
                       <ul className="space-y-3">
@@ -215,7 +215,7 @@ export default function Week2Class2() {
                             <span className="font-semibold">
                               next() function
                             </span>
-                            <p className="text-sm text-gray-600">
+                            <p className="text-sm text-gray-600" dir="rtl">
                               اگلے middleware کو control منتقل کرتا ہے
                             </p>
                           </div>
@@ -228,7 +228,7 @@ export default function Week2Class2() {
                     <h3 className="text-xl font-bold text-yellow-800 mb-4 flex items-center gap-2">
                       🧩 تشبیہ:
                     </h3>
-                    <p className="text-lg text-gray-700 mb-4">
+                    <p className="text-lg text-gray-700 mb-4" dir="rtl">
                       Middleware کو ہوائی اڈے کے سیکورٹی چیک پوائنٹس یا فلٹرز کے
                       طور پر سوچیں:
                     </p>
@@ -249,7 +249,7 @@ export default function Week2Class2() {
                         <p className="text-sm text-gray-600">حتمی اجازت</p>
                       </div>
                     </div>
-                    <p className="mt-4 text-gray-700">
+                    <p className="mt-4 text-gray-700" dir="rtl"> 
                       <strong>اسی طرح، Express میں:</strong> ایک middleware آپ
                       کے request کو لاگ کر سکتا ہے، دوسرا آپ کے token کو verify
                       کر سکتا ہے، تیسرا errors کو handle کر سکتا ہے۔
@@ -263,13 +263,13 @@ export default function Week2Class2() {
                 <div className="space-y-6">
                   <div className="flex items-center gap-3 mb-6">
                     <Zap className="w-8 h-8 text-yellow-600" />
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-right" dir="rtl">
                       ⚙️ Middleware کیوں ضروری ہے؟
                     </h2>
                   </div>
 
                   <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6">
-                    <p className="text-lg text-gray-700 mb-6">
+                    <p className="text-lg text-gray-700 mb-6" dir="rtl">
                       Middleware آپ کو اپنی application کے cross-cutting
                       concerns کو modularize کرنے کی اجازت دیتا ہے۔ Middleware
                       کے بغیر، آپ کو ہر route کے لیے ان کو manually کوڈ کرنا
@@ -284,7 +284,7 @@ export default function Week2Class2() {
                     alt="Middleware Example Diagram illustrating various middleware functions in an Express.js application"
                     className="hover:shadow-xl transition-transform duration-300 ease-out hover:scale-105 hover:-translate-y-1w-full h-auto rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300"
                   />
-                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4" dir="rtl">
                     {[
                       {
                         icon: "📝",
@@ -580,7 +580,7 @@ app.use(logger);`}
                           </th>
                         </tr>
                       </thead>
-                      <tbody className="bg-white divide-y divide-gray-200">
+                      <tbody className="bg-white divide-y divide-gray-200" dir="rtl">
                         {[
                           {
                             type: "Logging",
@@ -767,7 +767,7 @@ app.use(logger);`}
                         <span>incomplete یا undefined data واپس کرنا</span>
                       </li>
                     </ul>
-                    <p className="mt-4 text-gray-700">
+                    <p className="mt-4 text-gray-700" dir="rtl">
                       یہ مسائل اکثر runtime تک نظر نہیں آتے، جس سے unexpected
                       behavior اور broken APIs بنتی ہیں۔ TypeScript ان مسائل کو
                       type safety کے ذریعے حل کرتا ہے۔
@@ -779,7 +779,7 @@ app.use(logger);`}
                       <Shield className="w-5 h-5" />
                       🧠 Type Safety کیا ہے؟
                     </h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-700 mb-4" dir="rtl">
                       Type safety کا مطلب ہے کہ آپ کا code ہر variable، function
                       اور object کی data type کو سمجھتا ہے۔ یہ آپ کو
                       incompatible data assign کرنے یا استعمال کرنے سے روکتا ہے،
@@ -799,7 +799,7 @@ app.use(logger);`}
   res.send(\`User: \${name}\`);
 });`}
                       </pre>
-                      <p className="mt-3 text-gray-700 text-sm">
+                      <p className="mt-3 text-gray-700 text-sm" dir="rtl">
                         Plain JavaScript میں، یہ typo runtime تک error نہیں دے
                         گی۔ جب آپ server چلائیں گے، تو آپ کو undefined ملے گا
                         کیونکہ req.body.username موجود نہیں ہے۔
@@ -821,7 +821,7 @@ app.post("/users", (req: Request<{}, {}, UserRequestBody>, res: Response) => {
   res.json({ message: \`User \${name}, Age: \${age}\` });
 });`}
                       </pre>
-                      <p className="mt-3 text-gray-700 text-sm">
+                      <p className="mt-3 text-gray-700 text-sm" dir="rtl">
                         یہاں، TypeScript statically طور پر req.body کو چیک کرتا
                         ہے۔ اگر آپ ایسی property access کرنے کی کوشش کریں جو
                         موجود نہیں ہے (req.body.username)، تو TypeScript فوراً
@@ -832,7 +832,7 @@ app.post("/users", (req: Request<{}, {}, UserRequestBody>, res: Response) => {
                   </div>
 
                   <div className="bg-blue-50 p-6 rounded-xl">
-                    <h3 className="text-xl font-bold text-blue-800 mb-4">
+                    <h3 className="text-xl font-bold text-blue-800 mb-4" dir="rtl">
                       🧱 TypeScript Types کو Express میں سیٹ اپ کرنا
                     </h3>
 
@@ -1131,10 +1131,10 @@ app.post(
                   </div>
 
                   <div className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
-                    <h3 className="text-xl font-bold text-yellow-800 mb-4">
+                    <h3 className="text-xl font-bold text-yellow-800 mb-4" dir="rtl">
                       🧩 عملی کام
                     </h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-700 mb-4" dir="rtl">
                       Express.js اور TypeScript کا استعمال کرتے ہوئے books کے
                       لیے ایک CRUD API بنائیں۔
                     </p>

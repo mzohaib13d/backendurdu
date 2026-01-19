@@ -92,7 +92,7 @@ export default function Week3Class2() {
       <div className="space-y-8">
         {/* Section 1 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🧩 1. ڈیٹا (Data) کیا ہے؟
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
@@ -125,10 +125,10 @@ export default function Week3Class2() {
 
         {/* Section 2 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🧠 2. معلومات (Information) کیا ہے؟
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
             معلومات وہ ڈیٹا ہے جو پراسیس، منظم اور معنی خیز بنایا گیا ہو۔
           </p>
 
@@ -156,7 +156,7 @@ export default function Week3Class2() {
 
         {/* Section 3 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🗄️ 3. ڈیٹا بیس (Database) کیا ہے؟
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
@@ -171,11 +171,11 @@ export default function Week3Class2() {
                 <span className="font-medium">سکول ڈیٹا بیس:</span> طلباء،
                 اساتذہ، کلاسیں
               </div>
-              <div className="bg-green-100 p-3 rounded-lg">
+              <div className="bg-green-100 p-3 rounded-lg" dir="rtl">
                 <span className="font-medium">ای کامرس:</span> مصنوعات، آرڈرز،
                 گاہک
               </div>
-              <div className="bg-purple-100 p-3 rounded-lg">
+              <div className="bg-purple-100 p-3 rounded-lg" dir="rtl">
                 <span className="font-medium">ہسپتال:</span> مریض، ڈاکٹرز،
                 اپائنٹمنٹس
               </div>
@@ -191,14 +191,14 @@ export default function Week3Class2() {
 
         {/* Section 4 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             📝 4. میٹا ڈیٹا (Metadata) کیا ہے؟
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
             میٹا ڈیٹا کا مطلب ہے "ڈیٹا کے بارے میں ڈیٹا"۔
           </p>
 
-          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
             یہ بیان کرتا ہے:
           </p>
 
@@ -232,7 +232,7 @@ export default function Week3Class2() {
           </div>
 
           <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200">
-            <p className="text-gray-700 leading-relaxed text-right text-lg font-medium">
+            <p className="text-gray-700 leading-relaxed text-right text-lg font-medium" dir="rtl">
               ➡️ میٹا ڈیٹا DBMS کو سمجھنے میں مدد کرتا ہے کہ ڈیٹا کیسے محفوظ کیا
               جائے۔
             </p>
@@ -241,7 +241,7 @@ export default function Week3Class2() {
 
         {/* Section 5 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🖥️ 5. DBMS کیا ہے؟
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
@@ -286,8 +286,8 @@ export default function Week3Class2() {
         </section>
 
         {/* Section 6 */}
-        <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+        <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200" dir="rtl">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🔧 6. DBMS کے افعال (Functionalities)
           </h2>
 
@@ -475,7 +475,7 @@ WHERE marks >= 80;`}
 
         {/* Section 7 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🥇 7. ڈیٹا بیس اور DBMS میں فرق
           </h2>
 
@@ -539,7 +539,7 @@ WHERE marks >= 80;`}
 
         {/* Section 8 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             👨‍💼 8. ڈیٹا بیس صارفین (Database Users)
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
@@ -710,7 +710,7 @@ WHERE marks >= 80;`}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h2 className="text-2xl font-bold text-green-600 mb-4 text-right">
+              <h2 className="text-2xl font-bold text-green-600 mb-4 text-right" dir="rtl">
                 ⭐ 9. DBMS کے فوائد
               </h2>
               <ul className="space-y-3 text-right text-gray-700">
@@ -748,7 +748,7 @@ WHERE marks >= 80;`}
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-red-600 mb-4 text-right">
+              <h2 className="text-2xl font-bold text-red-600 mb-4 text-right" dir="rtl">
                 ⚠️ 10. DBMS کے نقصانات
               </h2>
               <ul className="space-y-3 text-right text-gray-700">
@@ -776,8 +776,8 @@ WHERE marks >= 80;`}
         </section>
 
         {/* Section 11 */}
-        <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+        <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200" dir="rtl">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🏛️ 11. ڈیٹا بیس ایپلیکیشنز کی تاریخ
           </h2>
 
@@ -884,7 +884,7 @@ WHERE marks >= 80;`}
 
         {/* Section 12 & 13 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🧱 12. ERD (Entity–Relationship Diagram)
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6 text-right text-lg">
@@ -907,7 +907,7 @@ WHERE marks >= 80;`}
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🔤 13. ERD کی اصطلاحات
           </h2>
 
@@ -1057,7 +1057,7 @@ WHERE marks >= 80;`}
           </div>
         </section>
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🗂️ 14. Entity Type اور Entity Set
           </h2>
 
@@ -1145,7 +1145,7 @@ WHERE marks >= 80;`}
 
         {/* Section 15 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🔑 15. Key Attribute
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
@@ -1166,7 +1166,7 @@ WHERE marks >= 80;`}
 
         {/* Section 16 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🧩 16. کمزور Entity (Weak Entity)
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
@@ -1193,7 +1193,7 @@ WHERE marks >= 80;`}
 
         {/* Section 17 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🏗️ 17. ڈیٹا بیس ڈیزائن کا عمل
           </h2>
 
@@ -1245,7 +1245,7 @@ WHERE marks >= 80;`}
 
         {/* Section 18 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🔗 18. Relationship Degree
           </h2>
           <div className="space-y-6">
@@ -1338,7 +1338,7 @@ WHERE marks >= 80;`}
 
         {/* Section 19 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🔒 19. Relationship Constraints
           </h2>
 
@@ -1476,7 +1476,7 @@ WHERE marks >= 80;`}
 
         {/* Section 20 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🟥 20. ER Diagram Symbols (بہت اہم)
           </h2>
 
@@ -1597,16 +1597,16 @@ WHERE marks >= 80;`}
 
         {/* Section 21 - Normalization */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-3xl font-bold text-purple-700 mb-6 text-right">
+          <h2 className="text-3xl font-bold text-purple-700 mb-6 text-right" dir="rtl">
             📘 Normalization & Denormalization
           </h2>
 
           {/* What is Normalization */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
               🧩 Normalization کیا ہے؟
             </h3>
-            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
               Normalization ایک ڈیٹا بیس ڈیزائن تکنیک ہے جو استعمال ہوتی ہے:
             </p>
 
@@ -1646,7 +1646,7 @@ WHERE marks >= 80;`}
 
           {/* Why Normalization */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-red-600 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-red-600 mb-4 text-right" dir="rtl">
               ❓ ہمیں Normalization کی ضرورت کیوں ہے؟
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
@@ -1691,10 +1691,10 @@ WHERE marks >= 80;`}
 
           {/* Normalization Example */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl"> 
               🎯 Normalization مثال (Normalization سے پہلے)
             </h3>
-            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
               فرض کریں ہم طالب علم اور کورس کی معلومات ایک ٹیبل میں محفوظ کرتے
               ہیں:
             </p>
@@ -1773,7 +1773,7 @@ WHERE marks >= 80;`}
 
           {/* Normal Forms */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
               🏛️ Normalization کی اقسام (Normal Forms)
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
@@ -1802,7 +1802,7 @@ WHERE marks >= 80;`}
 
           {/* 1NF */}
           <div className="mb-8">
-            <h3 className="text-xl font-bold text-blue-600 mb-4 text-right">
+            <h3 className="text-xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
               🔰 1NF – First Normal Form
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-right">
@@ -1937,7 +1937,7 @@ WHERE marks >= 80;`}
 
           {/* 2NF */}
           <div className="mb-8">
-            <h3 className="text-xl font-bold text-green-600 mb-4 text-right">
+            <h3 className="text-xl font-bold text-green-600 mb-4 text-right" dir="rtl">
               🟦 2NF – Second Normal Form
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-right">
@@ -2068,7 +2068,7 @@ WHERE marks >= 80;`}
 
           {/* 3NF */}
           <div className="mb-8">
-            <h3 className="text-xl font-bold text-purple-600 mb-4 text-right">
+            <h3 className="text-xl font-bold text-purple-600 mb-4 text-right" dir="rtl">
               🟩 3NF – Third Normal Form
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-right">
@@ -2180,7 +2180,7 @@ WHERE marks >= 80;`}
 
           {/* BCNF */}
           <div className="mb-8">
-            <h3 className="text-xl font-bold text-red-600 mb-4 text-right">
+            <h3 className="text-xl font-bold text-red-600 mb-4 text-right" dir="rtl">
               🟥 BCNF – Boyce–Codd Normal Form
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-right">
@@ -2218,7 +2218,7 @@ WHERE marks >= 80;`}
 
           {/* Summary Table */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
               🎉 Normal Forms کا خلاصہ
             </h3>
 
@@ -2289,7 +2289,7 @@ WHERE marks >= 80;`}
 
           {/* Denormalization */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-orange-600 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-orange-600 mb-4 text-right" dir="rtl">
               🧱 Denormalization کیا ہے؟
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
@@ -2299,13 +2299,13 @@ WHERE marks >= 80;`}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               <div className="bg-orange-50 p-4 rounded-xl text-center">
                 <span className="text-orange-600 text-2xl">⚡</span>
-                <p className="font-medium text-gray-700 mt-2">
+                <p className="font-medium text-gray-700 mt-2" dir="rtl">
                   کارکردگی بہتر ہو
                 </p>
               </div>
               <div className="bg-orange-50 p-4 rounded-xl text-center">
                 <span className="text-orange-600 text-2xl">🔗</span>
-                <p className="font-medium text-gray-700 mt-2">جوائنز کم ہوں</p>
+                <p className="font-medium text-gray-700 mt-2" dir="rtl">جوائنز کم ہوں</p>
               </div>
               <div className="bg-orange-50 p-4 rounded-xl text-center">
                 <span className="text-orange-600 text-2xl">🚀</span>
@@ -2314,7 +2314,7 @@ WHERE marks >= 80;`}
             </div>
 
             <div className="bg-yellow-50 p-4 rounded-xl border border-yellow-200">
-              <p className="text-gray-700 leading-relaxed text-right text-lg font-medium">
+              <p className="text-gray-700 leading-relaxed text-right text-lg font-medium" dir="rtl">
                 ➡️ یہ جان بوجھ کر تکرار شامل کرتا ہے تاکہ پڑھنے کے آپریشنز تیز
                 ہوں۔
               </p>
@@ -2325,30 +2325,30 @@ WHERE marks >= 80;`}
                 استعمال ہوتا ہے:
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-center mt-2">
-                <div className="bg-white p-3 rounded-lg">ڈیٹا گوداموں میں</div>
+                <div className="bg-white p-3 rounded-lg" dir="rtl">ڈیٹا گوداموں میں</div>
                 <div className="bg-white p-3 rounded-lg">
                   تلاش پر مبنی سسٹمز
                 </div>
-                <div className="bg-white p-3 rounded-lg">OLAP سسٹمز</div>
+                <div className="bg-white p-3 rounded-lg" dir="rtl">OLAP سسٹمز</div>
               </div>
             </div>
           </div>
 
           {/* Why Denormalization */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-red-600 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-red-600 mb-4 text-right" dir="rtl">
               ❓ Denormalization کیوں؟
             </h3>
             <div className="bg-gradient-to-r from-blue-50 to-red-50 p-6 rounded-xl border border-gray-300">
-              <p className="text-gray-700 leading-relaxed mb-3 text-right text-lg">
+              <p className="text-gray-700 leading-relaxed mb-3 text-right text-lg" dir="rtl">
                 Normalization → اچھی ساخت، کم خرابیاں
               </p>
-              <p className="text-gray-700 leading-relaxed mb-3 text-right text-lg">
+              <p className="text-gray-700 leading-relaxed mb-3 text-right text-lg" dir="rtl">
                 لیکن بہت زیادہ normalization = بہت ساری ٹیبلز = بہت ساری جوائنز
                 = سست کارکردگی
               </p>
               <div className="bg-yellow-100 p-4 rounded-lg mt-4">
-                <p className="text-gray-700 leading-relaxed text-right text-lg font-medium">
+                <p className="text-gray-700 leading-relaxed text-right text-lg font-medium" dir="rtl">
                   Denormalization کارکردگی کے مسائل حل کرتی ہے۔
                 </p>
               </div>
@@ -2357,11 +2357,11 @@ WHERE marks >= 80;`}
 
           {/* Denormalization Example */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-purple-600 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-purple-600 mb-4 text-right" dir="rtl">
               📌 Denormalization کی مثال
             </h3>
 
-            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
               فرض کریں ہم normalized ڈیٹا اس طرح رکھتے ہیں:
             </p>
 
@@ -2409,11 +2409,11 @@ WHERE marks >= 80;`}
               </div>
             </div>
 
-            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
               صارف + آرڈر ڈیٹا دکھانے کے لیے، ہمیں ٹیبلز کو join کرنا پڑے گا۔
             </p>
 
-            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+            <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
               اگر سسٹم پڑھنے پر بھاری ہے (بہت سے SELECT سوالات)، ہم denormalize
               کرتے ہیں:
             </p>
@@ -2452,7 +2452,7 @@ WHERE marks >= 80;`}
 
           {/* Comparison Table */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
               🔥 Normalization اور Denormalization میں فرق
             </h3>
 
@@ -2517,7 +2517,7 @@ WHERE marks >= 80;`}
           {/* When to Use */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-green-50 p-6 rounded-xl border border-green-200">
-              <h3 className="text-xl font-bold text-green-700 mb-4 text-right">
+              <h3 className="text-xl font-bold text-green-700 mb-4 text-right" dir="rtl">
                 🧠 Normalization کب کریں؟
               </h3>
               <ul className="space-y-3 text-right text-gray-700">
@@ -2545,7 +2545,7 @@ WHERE marks >= 80;`}
             </div>
 
             <div className="bg-orange-50 p-6 rounded-xl border border-orange-200">
-              <h3 className="text-xl font-bold text-orange-700 mb-4 text-right">
+              <h3 className="text-xl font-bold text-orange-700 mb-4 text-right" dir="rtl">
                 ⚡ Denormalization کب کریں؟
               </h3>
               <ul className="space-y-3 text-right text-gray-700">
@@ -2575,7 +2575,7 @@ WHERE marks >= 80;`}
 
           {/* Hands On */}
           <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-2xl p-6 border-2 border-dashed border-blue-300">
-            <h3 className="text-2xl font-bold text-blue-700 mb-4 text-right">
+            <h3 className="text-2xl font-bold text-blue-700 mb-4 text-right" dir="rtl">
               👐 عملی کام:
             </h3>
             <div className="bg-white p-6 rounded-xl shadow">

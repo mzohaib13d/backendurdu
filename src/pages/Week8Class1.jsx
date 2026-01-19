@@ -30,7 +30,7 @@ export default function Week8Class1() {
 
   const [activeSection, setActiveSection] = useState(sections[0].id);
   const currentIndex = sections.findIndex(
-    (section) => section.id === activeSection
+    (section) => section.id === activeSection,
   );
 
   const goToPrevious = () => {
@@ -53,20 +53,27 @@ export default function Week8Class1() {
         <header className="mb-8 md:mb-12 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Shield className="w-10 h-10 text-green-600" />
-            <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+            <h1
+              className="py-5 md:py-6 text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent"
+              dir="rtl"
+            >
               Backend APIs کی توثیق اور سیکورٹی
             </h1>
           </div>
-          <p className="text-gray-600 text-lg md:text-xl">
+          <p className="text-gray-600 text-lg md:text-xl" dir="rtl">
             محفوظ اور مضبوط APIs بنانے کے لیے بنیادی تصورات
           </p>
+          <p className="mt-4 text-lg text-gray-700 font-medium md:text-2xl mt-2 mb-1" style={{ fontFamily: 'Calibri, sans-serif' }}>Instructor : Zohaib Farooq</p>
         </header>
 
         <div className="flex flex-col lg:flex-row gap-6 md:gap-8">
           {/* Left Sidebar - Navigation */}
           <nav className="lg:w-1/4">
             <div className="bg-white rounded-2xl shadow-lg p-4 md:p-6 sticky top-6">
-              <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <h2
+                className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2"
+                dir="rtl"
+              >
                 <Layers className="w-5 h-5" />
                 سیکورٹی کے موضوعات
               </h2>
@@ -123,8 +130,14 @@ export default function Week8Class1() {
                     </h2>
                   </div>
 
-                  <div className="bg-green-50 rounded-xl p-6 mb-6 border-l-4 border-green-500">
-                    <p className="text-xl md:text-2xl font-semibold text-green-700 mb-4">
+                  <div
+                    className="bg-green-50 rounded-xl p-6 mb-6 border-l-4 border-green-500"
+                    dir="rtl"
+                  >
+                    <p
+                      className="text-xl md:text-2xl font-semibold text-green-700 mb-4"
+                      dir="rtl"
+                    >
                       سیکورٹی اور توثیق ہر Backend API کے لیے انتہائی اہم ہیں۔
                     </p>
                     <p className="text-lg text-gray-700">
@@ -198,15 +211,15 @@ export default function Week8Class1() {
               {/* 📝 ان پٹ کی توثیق */}
               {activeSection === "validation" && (
                 <div className="space-y-6">
-                  <div className="flex items-center gap-3 mb-6">
+                  <div className="flex items-center gap-3 mb-6 text-right" dir="rtl">
                     <CheckSquare className="w-8 h-8 text-blue-600" />
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800" dir="rtl">
                       📝 ان پٹ کی توثیق
                     </h2>
-                  </div>
+                  </div> 
 
                   <div className="bg-blue-50 rounded-xl p-6 mb-6">
-                    <p className="text-lg text-gray-700 mb-4">
+                    <p className="text-lg text-gray-700 mb-4" dir="rtl">
                       آنے والے ڈیٹا کی توثیق یہ یقینی بناتی ہے کہ صارف ناجائز یا
                       نقصان دہ ڈیٹا نہیں بھیجتا۔
                     </p>
@@ -317,7 +330,7 @@ export const registerSchema = z.object({
                   </div>
 
                   <div className="bg-red-50 rounded-xl p-6 mb-6 border-l-4 border-red-500">
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-gray-700" dir="rtl">
                       MongoDB queries خطرناک ہو سکتی ہیں اگر صارف کا ان پٹ براہ
                       راست استعمال کیا جائے۔
                     </p>
@@ -328,23 +341,25 @@ export const registerSchema = z.object({
                       <h3 className="text-xl font-bold text-red-800 mb-4">
                         ❌ برا مثال (خطرے میں)
                       </h3>
-                      <div className="bg-gray-900 p-4 rounded-lg">
+                      <div className="bg-gray-900 p-4 rounded-lg overflow-x-auto">
                         <code className="text-red-300 font-mono whitespace-pre">
-                          {`const user = await User.findOne({ email:
-req.body.email });`}
+                          {`const user = await User.findOne({ email: req.body.email });`}
                         </code>
                       </div>
-                      <p className="mt-3 text-gray-700">
+                      <p className="mt-3 text-gray-700" dir="rtl">
                         صارف براہ راست ان پٹ دے سکتا ہے جو خطرناک کوڈ ہو سکتا
                         ہے۔
                       </p>
                     </div>
 
                     <div className="bg-green-100 p-6 rounded-xl">
-                      <h3 className="text-xl font-bold text-green-800 mb-4">
+                      <h3
+                        className="text-xl font-bold text-green-800 mb-4"
+                        dir="rtl"
+                      >
                         ✅ تحفظ کے طریقے
                       </h3>
-                      <ul className="space-y-3">
+                      <ul className="space-y-3" dir="rtl">
                         <li className="flex items-start gap-2">
                           <Shield className="w-5 h-5 text-green-600 mt-0.5" />
                           <span>ہمیشہ Mongoose / ODM طریقے استعمال کریں</span>
@@ -380,7 +395,7 @@ req.body.email });`}
                   </div>
 
                   <div className="bg-indigo-50 rounded-xl p-6 mb-6">
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-gray-700" dir="rtl">
                       Helmet مختلف HTTP ہیڈرز سیٹ کرتا ہے تاکہ سیکورٹی بہتر ہو۔
                     </p>
                   </div>
@@ -441,7 +456,7 @@ app.use(helmet());`}
                   </div>
 
                   <div className="bg-orange-50 rounded-xl p-6 mb-6">
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-gray-700" dir="rtl">
                       اپنی API کو brute force یا DDoS حملوں سے بچائیں۔
                     </p>
                   </div>
@@ -474,10 +489,10 @@ app.use(limiter);`}
                     </div>
 
                     <div className="bg-blue-50 p-6 rounded-xl">
-                      <h3 className="text-xl font-bold text-blue-800 mb-3">
+                      <h3 className="text-xl font-bold text-blue-800 mb-3" dir="rtl">
                         🎯 فوائد
                       </h3>
-                      <ul className="space-y-2">
+                      <ul className="space-y-2" dir="rtl">
                         <li className="flex items-start gap-2">
                           <div className="bg-blue-100 p-1 rounded">
                             <CheckSquare className="w-4 h-4 text-blue-600" />
@@ -513,7 +528,7 @@ app.use(limiter);`}
                   </div>
 
                   <div className="bg-teal-50 rounded-xl p-6 mb-6">
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-gray-700" dir="rtl">
                       CORS مختلف origins سے آنے والی فرنٹ اینڈ ایپس کو آپ کی API
                       تک رسائی کی اجازت دیتا ہے۔
                     </p>
@@ -587,7 +602,7 @@ app.use(
                   </div>
 
                   <div className="bg-red-50 rounded-xl p-6 mb-6">
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-gray-700" dir="rtl">
                       XSS اس وقت ہوتا ہے جب صارف کا ان پٹ sanitization کے بغیر
                       render کیا جاتا ہے۔
                     </p>
@@ -595,10 +610,10 @@ app.use(
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="bg-yellow-50 p-6 rounded-xl">
-                      <h3 className="text-xl font-bold text-yellow-800 mb-4">
+                      <h3 className="text-xl font-bold text-yellow-800 mb-4 text-right" dir="rtl">
                         🛡️ تحفظ کے طریقے
                       </h3>
-                      <ul className="space-y-3">
+                      <ul className="space-y-3" dir="rtl">
                         <li className="flex items-start gap-2">
                           <Shield className="w-5 h-5 text-green-600 mt-0.5" />
                           <span>Joi / Zod کے ذریعے ان پٹ کی توثیق</span>
@@ -639,13 +654,13 @@ app.use(helmet.xssFilter());`}
                       📝 مثال: XSS حملہ
                     </h3>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="text-gray-700 mb-2">
+                      <p className="text-gray-700 mb-2" dir="rtl">
                         صارف درج ذیل ڈیٹا داخل کر سکتا ہے:
                       </p>
-                      <code className="block bg-gray-100 p-2 rounded font-mono text-sm">
+                      <code className="block bg-gray-100 p-2 rounded font-mono text-sm text-right">
                         &lt;script&gt;alert('XSS')&lt;/script&gt;
                       </code>
-                      <p className="mt-3 text-gray-700">
+                      <p className="mt-3 text-gray-700" dir="rtl">
                         صحیح sanitization کے بغیر، یہ اسکرپٹ execute ہو جائے گا۔
                       </p>
                     </div>
@@ -664,10 +679,10 @@ app.use(helmet.xssFilter());`}
                   </div>
 
                   <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6">
-                    <h3 className="text-xl font-bold text-purple-800 mb-4">
+                    <h3 className="text-xl font-bold text-purple-800 mb-4 text-right" dir="rtl">
                       ✅ بہترین طریقے
                     </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4" dir="rtl">
                       {[
                         "آنے والی درخواستوں کی ہمیشہ توثیق کریں",
                         "تیار شدہ statements / Mongoose طریقے استعمال کریں",
@@ -688,7 +703,7 @@ app.use(helmet.xssFilter());`}
                   </div>
 
                   <div className="bg-blue-50 p-6 rounded-xl">
-                    <h3 className="text-xl font-bold text-blue-800 mb-4">
+                    <h3 className="text-xl font-bold text-blue-800 mb-4" dir="rtl">
                       🎯 ان اقدامات کے فوائد
                     </h3>
                     <div className="grid md:grid-cols-3 gap-4">
@@ -739,13 +754,13 @@ app.use(helmet.xssFilter());`}
                   </div>
 
                   <div className="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
-                    <h3 className="text-xl font-bold text-green-800 mb-3">
+                    <h3 className="text-xl font-bold text-green-800 mb-3" dir="rtl">
                       🎓 نتیجہ
                     </h3>
-                    <p className="text-lg text-gray-700">
+                    <p className="text-lg text-gray-700" dir="rtl">
                       ان توثیق اور سیکیورٹی کے اقدامات کو لاگو کر کے:
                     </p>
-                    <ul className="mt-3 space-y-2 text-gray-700">
+                    <ul className="mt-3 space-y-2 text-gray-700" dir="rtl">
                       <li className="flex items-start gap-2">
                         <div className="text-green-600 mt-1">•</div>
                         <span>APIs مضر حملوں سے محفوظ رہتی ہیں</span>
@@ -762,7 +777,7 @@ app.use(helmet.xssFilter());`}
                       </li>
                     </ul>
                     <div className="mt-4 p-3 bg-green-100 rounded-lg">
-                      <p className="font-bold text-green-800">
+                      <p className="font-bold text-green-800" dir="rtl">
                         یہ backend beginners اور production-ready APIs کے لیے
                         لازمی ہے۔
                       </p>

@@ -76,12 +76,12 @@ export default function Week2Class1() {
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6 text-blue-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🌐 HTTP Status Codes کیا ہیں؟
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 sm:mb-6 leading-relaxed mobile-section-text" dir="rtl">
             HTTP Status Codes تین ہندسوں والے نمبر ہیں جو سرور کی طرف سے client
             (جیسے browser, mobile app, یا API) کو واپس بھیجے جاتے ہیں تاکہ بتایا
             جا سکے کہ request کے بعد کیا ہوا۔
           </p>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 sm:mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 sm:mb-6 leading-relaxed mobile-section-text" dir="rtl">
             👉 ہر بار جب آپ کوئی request بھیجتے ہیں — مثال کے طور پر، page visit
             کرنا، form submit کرنا، یا API data fetch کرنا — سرور ایک status
             code کے ساتھ reply کرتا ہے جو اس operation کے result کو describe
@@ -110,7 +110,7 @@ OK → status message ہے`}
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6 text-green-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             ⚙️ HTTP Status Code کیا ہے؟
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl"> 
             ایک HTTP Status Code response message کا حصہ ہے جو server سے client
             کو بھیجا جاتا ہے۔ یہ client کو inform کرتا ہے کہ request successful
             ہوئی، redirected ہوئی، failed ہوئی، یا error کا باعث بنی۔
@@ -191,7 +191,7 @@ OK → status message ہے`}
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-gray-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧩 1xx – Informational Responses
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             یہ modern applications میں rarely used ہوتے ہیں۔ They simply mean
             "the request has started processing"۔
           </p>
@@ -351,7 +351,7 @@ res.end(JSON.stringify({ message: "User created successfully ✅" }));`}
           <div className="mt-6 p-4 sm:p-6 bg-green-100 border-l-4 border-green-500 rounded-xl mobile-highlight">
             <p className="text-green-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text">
               <span className="text-lg sm:text-2xl">🧠</span>
-              <span>
+              <span dir="rtl" className="text-base sm:text-2xl text-right">
                 مثال: یہ code 201 status code کے ساتھ JSON response واپس کرتا ہے
                 جب new user create کیا جاتا ہے۔
               </span>
@@ -453,7 +453,7 @@ res.end();`}
           />
 
           <div className="mt-6 p-4 sm:p-6 bg-blue-100 border-l-4 border-blue-500 rounded-xl mobile-highlight">
-            <p className="text-blue-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text">
+            <p className="text-blue-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text" dir="rtl">
               <span className="text-lg sm:text-2xl">🧠</span>
               <span>
                 مثال: یہ client کو redirect کرتا ہے، انہیں automatically
@@ -468,7 +468,7 @@ res.end();`}
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-red-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             ⚠️ 4xx – Client Error Codes
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             یہ client کی request میں problems کی نشاندہی کرتے ہیں — جیسے wrong
             data, missing authorization, یا invalid routes۔
           </p>
@@ -768,7 +768,7 @@ res.end();`}
             💡 Status Codes کیوں اہم ہیں؟
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mobile-grid">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mobile-grid" dir="rtl">
             {[
               [
                 "🧠",
@@ -827,7 +827,7 @@ res.end();`}
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 text-teal-800 flex items-center gap-2 sm:gap-3 mobile-section-title">
             🧩 Complete Example in TypeScript
           </h2>
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             یہاں ایک چھوٹا Node.js + TypeScript server ہے جو multiple status
             codes کو demonstrate کرتا ہے:
           </p>
@@ -1010,10 +1010,10 @@ server.listen(3000, () => {
             <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-indigo-700 mobile-subsection-title">
               🧠 What is an API?
             </h3>
-            <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text">
+            <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text" dir="rtl">
               API کا مطلب ہے <strong>Application Programming Interface</strong>۔
             </p>
-            <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text">
+            <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text" dir="rtl">
               سادہ الفاظ میں: یہ دو applications (یا systems) کے درمیان بات چیت
               کرنے کا طریقہ ہے۔
             </p>
@@ -1040,18 +1040,18 @@ server.listen(3000, () => {
               <h4 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-blue-700 mobile-card-title">
                 📝 مثال:
               </h4>
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                 جب آپ Instagram کھولتے ہیں:
               </p>
               <ul className="list-disc pl-4 sm:pl-6 space-y-1">
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   Mobile app backend پر Instagram API کو call کرتا ہے
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   وہ API آپ کا profile data, images, اور likes واپس بھیجتا ہے
                 </li>
               </ul>
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text" dir="rtl">
                 Backend development میں: APIs frontend apps (React, mobile,
                 وغیرہ) کو آپ کے Node.js server سے communicate کرنے دیتے ہیں
               </p>
@@ -1074,7 +1074,7 @@ server.listen(3000, () => {
                 ⚙️ What is REST?
               </h3>
 
-              <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text">
+              <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text" dir="rtl">
                 REST کا مطلب ہے <strong>Representational State Transfer</strong>
                 ۔ یہ کوئی programming language یا framework نہیں ہے — یہ ایک
                 architectural style یا web APIs بنانے کے rules کا set ہے جو
@@ -1085,22 +1085,22 @@ server.listen(3000, () => {
               <h4 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-indigo-700 mobile-card-title">
                 🧠 سادہ تفہیم:
               </h4>
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                 ایک restaurant 🍽️ کا تصور کریں:
               </p>
               <ul className="list-disc pl-4 sm:pl-6 space-y-1">
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   آپ (client) waiter سے dish request کرتے ہیں
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   Waiter (API) آپ کی request کو chef کے پاس لے جاتا ہے
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   Chef (server/database) آپ کا کھانا تیار کرتا ہے اور waiter کے
                   ذریعے واپس بھیجتا ہے
                 </li>
               </ul>
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text" dir="rtl">
                 اسی طرح: Client ایک HTTP request بھیجتا ہے → Server اسے process
                 کرتا ہے اور response واپس بھیجتا ہے → API دونوں کو connect کرنے
                 والا medium ہے۔
@@ -1184,7 +1184,7 @@ server.listen(3000, () => {
             🌐 Backend Development میں HTTP Methods کی تفہیم
           </h2>
 
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             HTTP methods (جنہیں HTTP verbs بھی کہا جاتا ہے) define کرتے ہیں کہ
             آپ web server میں resource (data) پر کس قسم کا action perform کرنا
             چاہتے ہیں۔
@@ -1193,7 +1193,7 @@ server.listen(3000, () => {
           <div className="mb-6 p-4 sm:p-6 bg-blue-100 border-l-4 border-blue-500 rounded-xl mobile-highlight">
             <p className="text-blue-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text">
               <span className="text-lg sm:text-2xl">⚡</span>
-              <span>
+              <span dir="rtl">
                 یہ methods server کو بتاتے ہیں کہ آپ کیا کرنا چاہتے ہیں — جیسے:
               </span>
             </p>
@@ -1215,7 +1215,7 @@ server.listen(3000, () => {
             <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-indigo-700 mobile-subsection-title">
               ⚙️ What is HTTP?
             </h3>
-            <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text">
+            <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-4 leading-relaxed mobile-section-text" dir="rtl">
               HTTP (HyperText Transfer Protocol) web پر data communication کی
               foundation ہے۔ یہ define کرتا ہے کہ clients (جیسے browsers یا
               apps) اور servers کیسے communicate کرتے ہیں۔
@@ -1225,17 +1225,17 @@ server.listen(3000, () => {
               <h4 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-indigo-700 mobile-card-title">
                 🌍 HTTP Request-Response Cycle
               </h4>
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                 جب آپ website visit کرتے ہیں یا API call کرتے ہیں:
               </p>
               <ol className="list-decimal pl-4 sm:pl-6 space-y-2">
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   آپ کا browser (client) ایک HTTP request بھیجتا ہے۔
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   Server اسے process کرتا ہے۔
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   HTTP response واپس بھیجتا ہے۔
                 </li>
               </ol>
@@ -1347,19 +1347,19 @@ server.listen(3000, () => {
               💡 Key Points to Remember
             </h4>
             <ul className="list-disc pl-4 sm:pl-6 space-y-2">
-              <li className="text-green-800 text-sm sm:text-base">
+              <li className="text-green-800 text-sm sm:text-base" dir="rtl">
                 HTTP stateless protocol ہے - ہر request independent ہوتی ہے
               </li>
-              <li className="text-green-800 text-sm sm:text-base">
+              <li className="text-green-800 text-sm sm:text-base" dir="rtl">
                 ہر HTTP method کا specific purpose ہوتا ہے
               </li>
-              <li className="text-green-800 text-sm sm:text-base">
+              <li className="text-green-800 text-sm sm:text-base" dir="rtl">
                 Methods کو CRUD operations سے map کیا جا سکتا ہے
               </li>
-              <li className="text-green-800 text-sm sm:text-base">
+              <li className="text-green-800 text-sm sm:text-base" dir="rtl">
                 Headers additional information provide کرتے ہیں
               </li>
-              <li className="text-green-800 text-sm sm:text-base">
+              <li className="text-green-800 text-sm sm:text-base" dir="rtl">
                 Body میں data ہوتا ہے (POST, PUT, PATCH methods کے لیے)
               </li>
             </ul>
@@ -1371,16 +1371,16 @@ server.listen(3000, () => {
             🌐 Backend Development میں HTTP Methods کی تفہیم
           </h2>
 
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             HTTP methods (جنہیں HTTP verbs بھی کہا جاتا ہے) define کرتے ہیں کہ
             آپ web server میں resource (data) پر کس قسم کا action perform کرنا
             چاہتے ہیں۔
           </p>
 
           <div className="mb-6 p-4 sm:p-6 bg-green-100 border-l-4 border-green-500 rounded-xl mobile-highlight">
-            <p className="text-green-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text">
+            <p className="text-green-800 text-sm sm:text-base font-bold flex items-start gap-2 sm:gap-3 mobile-highlight-text" dir="rtl">
               <span className="text-lg sm:text-2xl">⚙️</span>
-              <span>
+              <span className="leading-relaxed" dir="rtl">
                 یہ methods server کو بتاتے ہیں کہ آپ کیا کرنا چاہتے ہیں — جیسے:
                 Data fetch کرنا، نیا data بنانا، existing data update کرنا، یا
                 data delete کرنا
@@ -1404,12 +1404,12 @@ server.listen(3000, () => {
                     1. GET — Retrieve Data
                   </h4>
                 </div>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                   <strong>Purpose:</strong> Server سے data fetch یا read کرنے کے
                   لیے استعمال ہوتا ہے۔ یہ کبھی بھی data modify نہیں کرتا — صرف
                   information request کرتا ہے۔
                 </p>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                   <strong>Key Points:</strong> Safe اور idempotent (multiple
                   times safely call کیا جا سکتا ہے)۔ Data URL کے ذریعے بھیجتا ہے
                   (query parameters)۔ Usually lists, details, یا search results
@@ -1438,11 +1438,11 @@ Response:
                     2. POST — Create Data
                   </h4>
                 </div>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                   <strong>Purpose:</strong> Server میں نیا data add کرنے کے لیے
                   استعمال ہوتا ہے۔
                 </p>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                   <strong>Key Points:</strong> Request body کے اندر data بھیجتا
                   ہے۔ Server اسے process کرتا ہے اور store کرتا ہے۔ Confirmation
                   یا created object واپس کرتا ہے۔
@@ -1469,12 +1469,12 @@ Response:
                     3. PUT — Full Update
                   </h4>
                 </div>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                   <strong>Purpose:</strong> Existing resource کو مکمل طور پر
                   update کرنے کے لیے استعمال ہوتا ہے۔ اگر کچھ fields missing
                   ہیں، تو وہ replace یا overwrite ہو جائیں گے۔
                 </p>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                   <strong>Key Points:</strong> Idempotent (same result no matter
                   how many times you send it)۔ پورے resource کو new data سے
                   replace کرتا ہے۔
@@ -1501,11 +1501,11 @@ Response:
                     4. DELETE — Remove Data
                   </h4>
                 </div>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                   <strong>Purpose:</strong> Server سے data delete کرنے کے لیے
                   استعمال ہوتا ہے۔
                 </p>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                   <strong>Key Points:</strong> Specified resource کو remove کرتا
                   ہے۔ Usually URL میں ID یا identifier کی ضرورت ہوتی ہے۔
                 </p>
@@ -1529,7 +1529,7 @@ Response:
                     5. PATCH — Partial Update
                   </h4>
                 </div>
-                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base mb-2 mobile-card-text" dir="rtl">
                   <strong>Purpose:</strong> Existing resource کے specific fields
                   کو update کرنے کے لیے استعمال ہوتا ہے۔ PUT کے برعکس، یہ پورا
                   object replace نہیں کرتا۔
@@ -1568,7 +1568,7 @@ Response:
                     </th>
                   </tr>
                 </thead>
-                <tbody className="text-xs sm:text-sm mobile-table-body">
+                <tbody className="text-xs sm:text-sm mobile-table-body" dir="rtl">
                   {[
                     ["PUT", "Full update", "پورے resource کو replace کرتا ہے"],
                     [
@@ -1739,18 +1739,18 @@ Response:
               🎯 Key Takeaways
             </h4>
             <ul className="list-disc pl-4 sm:pl-6 space-y-2">
-              <li className="text-blue-800 text-sm sm:text-base">
+              <li className="text-blue-800 text-sm sm:text-base" dir="rtl">
                 HTTP methods define کرتے ہیں کہ آپ resource (CRUD operations) کے
                 ساتھ کیسے interact کرتے ہیں
               </li>
-              <li className="text-blue-800 text-sm sm:text-base">
+              <li className="text-blue-800 text-sm sm:text-base" dir="rtl">
                 ہر method کا specific purpose ہوتا ہے — انہیں mix up نہ کریں
               </li>
-              <li className="text-blue-800 text-sm sm:text-base">
+              <li className="text-blue-800 text-sm sm:text-base" dir="rtl">
                 ہمیشہ meaningful status codes واپس کریں (مثلاً, 200 OK, 201
                 Created, 404 Not Found)
               </li>
-              <li className="text-blue-800 text-sm sm:text-base">
+              <li className="text-blue-800 text-sm sm:text-base" dir="rtl">
                 TypeScript requests اور responses handle کرتے وقت type safety
                 enforce کرنے میں مدد کرتا ہے
               </li>
@@ -1770,14 +1770,14 @@ Response:
               <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-purple-700 mobile-card-title">
                 1) What is Express.js?
               </h3>
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mobile-card-text" dir="rtl">
                 Express.js ایک minimal, flexible web framework ہے Node.js کے لیے
                 جو web servers اور APIs بنانے کو آسان بناتا ہے۔ یہ features کی
                 ایک thin layer فراہم کرتا ہے — routing, middleware,
                 request/response helpers — تاکہ آپ کو manually low-level HTTP
                 handling implement کرنے کی ضرورت نہ پڑے۔
               </p>
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text" dir="rtl">
                 <strong>Key idea:</strong> Express آپ کو structured, readable
                 API دیتا ہے endpoints بنانے کے لیے جبکہ unopinionated رہتا ہے
                 (آپ choose کرتے ہیں کہ app کو کیسے structure کریں)۔
@@ -1789,7 +1789,7 @@ Response:
               <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-purple-700 mobile-card-title">
                 2) Why do we need Express?
               </h3>
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mobile-card-text" dir="rtl">
                 Framework کے بغیر، web server بنانے کے لیے many common tasks کی
                 manual handling درکار ہوتی ہے:
               </p>
@@ -1800,33 +1800,33 @@ Response:
                 <li className="text-gray-700 text-xs sm:text-sm md:text-base">
                   Routing (URLs اور HTTP methods matching)
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   Headers اور status codes کی consistent handling
                 </li>
                 <li className="text-gray-700 text-xs sm:text-sm md:text-base">
                   Middleware chains (authentication, logging, body parsing)
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   Error handling, central logging, اور static file serving
                 </li>
               </ul>
-              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text">
+              <p className="text-gray-700 text-xs sm:text-sm md:text-base mt-2 mobile-card-text" dir="rtl">
                 Express انہیں solve کرتا ہے یہ offer کر کے:
               </p>
               <ul className="list-disc pl-4 sm:pl-6 mt-2 space-y-1">
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <code>app.get()</code>, <code>app.post()</code> وغیرہ routing
                   کے لیے
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <code>express.json()</code> اور{" "}
                   <code>express.urlencoded()</code> body parsing کے لیے
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   Middleware system (<code>app.use()</code>) reusable logic کے
                   لیے
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   Clear separation of concerns (routes, middleware, controllers)
                 </li>
               </ul>
@@ -1931,22 +1931,22 @@ Response:
                 5) Other popular Node.js frameworks
               </h3>
               <ul className="list-disc pl-4 sm:pl-6 space-y-1">
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <strong>Fastify</strong> — high performance, schema-based
                   validation
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <strong>Koa</strong> — Express کے creators کے ذریعے، minimal
                   اور modern (async/await middleware استعمال کرتا ہے)
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <strong>NestJS</strong> — full-featured, opinionated framework
                   TypeScript کے ساتھ بنایا گیا (بڑی apps کے لیے اچھا)
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <strong>Hapi</strong> — configuration-first framework
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <strong>Sails.js</strong> — MVC-style, data-driven apps کے لیے
                   مفید
                 </li>
@@ -2051,15 +2051,15 @@ nodemon — restarts server in dev when files change`}
 }`}
               />
               <ul className="list-disc pl-4 sm:pl-6 mt-2 space-y-1">
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <code>npm run dev</code> — development server with auto
                   restart (tsx استعمال کرتا ہے TypeScript کو بغیر compile کیے
                   چلانے کے لیے)
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <code>npm run build</code> — compile to dist/
                 </li>
-                <li className="text-gray-700 text-xs sm:text-sm md:text-base">
+                <li className="text-gray-700 text-xs sm:text-sm md:text-base" dir="rtl">
                   <code>npm start</code> — run compiled JS in production
                 </li>
               </ul>
@@ -2303,7 +2303,7 @@ app.listen(PORT, () => {
             🛠️ Hands-on CRUD with Express.js + TypeScript
           </h2>
 
-          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text">
+          <p className="text-gray-800 text-sm sm:text-base md:text-lg mb-6 leading-relaxed mobile-section-text" dir="rtl">
             ہم ایک چھوٹا books resource بنائیں گے جو memory (array) میں store
             کیا جائے گا۔ یہ typical REST CRUD (Create / Read / Update / Delete)
             کو demonstrate کرتا ہے۔
@@ -2422,7 +2422,7 @@ app.listen(PORT, () => {
             <h4 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-purple-700 mobile-subsection-title">
               🧠 CRUD Routes کی وضاحت:
             </h4>
-            <div className="space-y-4">
+            <div className="space-y-4" dir="rtl">
               {[
                 {
                   route: "GET /books",
@@ -2623,17 +2623,17 @@ npx tsx src/server.ts`}
           <p className="text-base sm:text-lg md:text-xl font-bold text-blue-900 mobile-footer-title">
             فائل: Week2Class1.jsx
           </p>
-          <p className="mt-2 sm:mt-4 text-xs sm:text-sm md:text-base mobile-footer-text">
+          <p className="mt-2 sm:mt-4 text-xs sm:text-sm md:text-base mobile-footer-text" dir="rtl">
             HTTP Status Codes Tutorial — مکمل طور پر Urdu رُسم الخط میں
           </p>
           <div className="mt-4 sm:mt-6 flex flex-wrap justify-center gap-2 sm:gap-4 mobile-badges">
-            <div className="px-2 sm:px-3 py-1 sm:py-1.5 bg-green-100 text-green-800 rounded-full font-semibold text-xs sm:text-sm mobile-badge">
+            <div className="px-2 sm:px-3 py-1 sm:py-1.5 bg-green-100 text-green-800 rounded-full font-semibold text-xs sm:text-sm mobile-badge" dir="rtl">
               ✅ تمام code blocks کاپی کے قابل
             </div>
-            <div className="px-2 sm:px-3 py-1 sm:py-1.5 bg-blue-100 text-blue-800 rounded-full font-semibold text-xs sm:text-sm mobile-badge">
+            <div className="px-2 sm:px-3 py-1 sm:py-1.5 bg-blue-100 text-blue-800 rounded-full font-semibold text-xs sm:text-sm mobile-badge" dir="rtl">
               🎯 عملی مشق کے لیے تیار
             </div>
-            <div className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-100 text-purple-800 rounded-full font-semibold text-xs sm:text-sm mobile-badge">
+            <div className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-100 text-purple-800 rounded-full font-semibold text-xs sm:text-sm mobile-badge" dir="rtl">
               ⚡ موبائل responsive
             </div>
           </div>

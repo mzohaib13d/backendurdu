@@ -271,11 +271,11 @@ export const transporter = nodemailer.createTransport({
             <div className="bg-purple-50 border border-purple-200 rounded-xl p-4">
               <h4 className="font-bold text-purple-800 mb-2" dir="rtl">کنہیں کیا رسائی حاصل ہے؟</h4>
               <ul className="space-y-1 text-purple-700">
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-2" dir="rtl">
                   <span className="text-purple-500">•</span>
                   <span>ایڈمن کیا کر سکتے ہیں</span>
                 </li>
-                <li className="flex items-center gap-2">
+                <li className="flex items-center gap-2" dir="rtl">
                   <span className="text-purple-500">•</span>
                   <span>عام صارفین پر کیا پابندیاں ہیں</span>
                 </li>
@@ -284,14 +284,14 @@ export const transporter = nodemailer.createTransport({
             
             <div className="bg-pink-50 border border-pink-200 rounded-xl p-4">
               <h4 className="font-bold text-pink-800 mb-2" dir="rtl">یہ تصور کہلاتا ہے:</h4>
-              <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-lg font-bold text-center">
+              <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-lg font-bold text-center" dir="rtl">
                 👉 رول پر مبنی تصدیق اور اجازت (RBAC)
               </div>
             </div>
           </div>
           
           <div className="mt-6 bg-gradient-to-r from-gray-100 to-white rounded-xl p-5 border border-gray-300 leading-8">
-            <h4 className="font-bold text-gray-800 mb-3">اس گائیڈ میں شامل ہیں:</h4>
+            <h4 className="font-bold text-gray-800 mb-3" dir="rtl">اس گائیڈ میں شامل ہیں:</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
                 'تصدیق بمقابلہ اجازت',
@@ -312,7 +312,7 @@ export const transporter = nodemailer.createTransport({
 
         {/* تصدیق بمقابلہ اجازت */}
         <section className="bg-white rounded-2xl shadow-xl p-6 mb-8 border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-1 leading-relaxed sm:leading-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-1 leading-relaxed sm:leading-8" dir="rtl">
             <Shield className="w-6 h-6 text-purple-600" />
             🔐 تصدیق بمقابلہ اجازت
           </h2>
@@ -328,21 +328,21 @@ export const transporter = nodemailer.createTransport({
               </thead>
               <tbody>
                 <tr className="bg-white">
-                  <td className="py-4 px-6 font-bold text-purple-700">تصدیق</td>
-                  <td className="py-4 px-6 text-gray-700">یہ شناخت کرنا کہ صارف کون ہے (لاگ ان/سائن اپ)</td>
-                  <td className="py-4 px-6 text-gray-700">لاگ ان کرنا</td>
+                  <td className="py-4 px-6 font-bold text-purple-700" dir="rtl">تصدیق</td>
+                  <td className="py-4 px-6 text-gray-700" dir="rtl">یہ شناخت کرنا کہ صارف کون ہے (لاگ ان/سائن اپ)</td>
+                  <td className="py-4 px-6 text-gray-700" dir="rtl">لاگ ان کرنا</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="py-4 px-6 font-bold text-pink-700">اجازت</td>
-                  <td className="py-4 px-6 text-gray-700">یہ طے کرنا کہ صارف کیا کر سکتا ہے (رولز/اجازتیں)</td>
-                  <td className="py-4 px-6 text-gray-700">ایڈمن پینل تک رسائی</td>
+                  <td className="py-4 px-6 font-bold text-pink-700" dir="rtl">اجازت</td>
+                  <td className="py-4 px-6 text-gray-700" dir="rtl">یہ طے کرنا کہ صارف کیا کر سکتا ہے (رولز/اجازتیں)</td>
+                  <td className="py-4 px-6 text-gray-700" dir="rtl">ایڈمن پینل تک رسائی</td>
                 </tr>
               </tbody>
             </table>
           </div>
           
           <div className="mt-6 p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200">
-            <p className="text-gray-800 text-center font-medium">
+            <p className="text-gray-800 text-center font-medium" dir="rtl">
               <span className="font-bold text-purple-700">لاگ ان کرنا</span> → تصدیق • 
               <span className="font-bold text-pink-700 mx-2">ایڈمن پینل تک رسائی</span> → اجازت
             </p>
@@ -351,13 +351,13 @@ export const transporter = nodemailer.createTransport({
 
         {/* رول پر مبنی تصدیق */}
         <section className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl p-8 mb-8 border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2" dir="rtl">
             <Users className="w-6 h-6 text-purple-600" />
             🧩 رول پر مبنی تصدیق (RBAC) کیا ہے؟
           </h2>
           
           <div className="bg-white rounded-xl p-5 mb-6 border border-purple-200">
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4" dir="rtl">
               RBAC میں، ہر صارف کو ایک رول تفویض کیا جاتا ہے:
             </p>
             
@@ -378,9 +378,9 @@ export const transporter = nodemailer.createTransport({
             <div className="flex items-start gap-3">
               <Server className="w-8 h-8 text-purple-600 mt-1" />
               <div>
-                <h4 className="font-bold text-gray-800 mb-2">سرور چیک کرتا ہے:</h4>
+                <h4 className="font-bold text-gray-800 mb-2" dir="rtl">سرور چیک کرتا ہے:</h4>
                 <div className="bg-white rounded-lg p-4 border border-purple-200">
-                  <p className="text-purple-700 font-medium italic">
+                  <p className="text-purple-700 font-medium italic" dir="rtl">
                     "کیا اس صارف کے رول کو یہ عمل کرنے کی اجازت ہے؟"
                   </p>
                 </div>
@@ -439,7 +439,7 @@ export const transporter = nodemailer.createTransport({
             📧 ای میل بھیجنا (NodeMailer)
           </h2>
           
-          <p className="text-gray-700 mb-6">
+          <p className="text-gray-700 mb-6" dir="rtl">
             ای میلز عام طور پر استعمال ہوتی ہیں:
           </p>
           
@@ -523,7 +523,7 @@ export const transporter = nodemailer.createTransport({
             🏁 خلاصہ
           </h2>
           
-          <p className="text-gray-700 mb-6 text-center text-lg">
+          <p className="text-gray-700 mb-6 text-center text-lg" dir="rtl">
             یہ گائیڈ ظاہر کرتی ہے:
           </p>
           
@@ -553,7 +553,7 @@ export const transporter = nodemailer.createTransport({
               کلاس 6 ہفتہ 1
             </span> | رول پر مبنی تصدیق اور ای میل بھیجنا
           </p>
-          <p className="text-sm">
+          <p className="text-sm" dir="rtl">
             تمام کوڈ نمونے پروڈکشن ریڈی ہیں اور براہ راست استعمال کیے جا سکتے ہیں
           </p>
         </footer>

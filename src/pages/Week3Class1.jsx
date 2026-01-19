@@ -71,29 +71,29 @@ export default function Week3Class1() {
       <div className="space-y-8">
         {/* Section 1 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🚦 1. Express.js میں Router کیا ہے؟
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
             ایک router آپ کی application کے endpoints/URLs کی تعریف کرنے اور انہیں متعلقہ functions (controllers) سے جوڑنے کا ذمہ دار ہے۔
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div className="bg-green-50 p-4 rounded-xl border border-green-200">
-              <h3 className="font-bold text-green-700 mb-2 text-right">✔ Routers کیا کرتے ہیں:</h3>
-              <ul className="space-y-2 text-right text-gray-700">
+              <h3 className="font-bold text-green-700 mb-2 text-right" dir="rtl">✔ Routers کیا کرتے ہیں:</h3>
+              <ul className="space-y-2 text-right text-gray-700" dir="rtl">
                 <li>• آنے والے HTTP requests کو سنتے ہیں</li>
-                <li>• request کو route سے ملتے ہیں (GET /users, POST /login, وغیرہ)</li>
-                <li>• request کو صحیح controller تک پہنچاتے ہیں</li>
+                <li dir="rtl">• request کو route سے ملتے ہیں (GET /users, POST /login, وغیرہ)</li>
+                <li dir="rtl">• request کو صحیح controller تک پہنچاتے ہیں</li>
               </ul>
             </div>
             
             <div className="bg-red-50 p-4 rounded-xl border border-red-200">
-              <h3 className="font-bold text-red-700 mb-2 text-right">✔ Routers کیا نہیں کرتے:</h3>
+              <h3 className="font-bold text-red-700 mb-2 text-right" dir="rtl">✔ Routers کیا نہیں کرتے:</h3>
               <ul className="space-y-2 text-right text-gray-700">
-                <li>• وہ business logic نہیں رکھتے</li>
-                <li>• وہ database operations نہیں سنبھالتے</li>
-                <li>• وہ data کی تصدیق یا پراسیس نہیں کرتے</li>
+                <li dir="rtl">• وہ business logic نہیں رکھتے</li>
+                <li dir="rtl">• وہ database operations نہیں سنبھالتے</li>
+                <li dir="rtl">• وہ data کی تصدیق یا پراسیس نہیں کرتے</li>
               </ul>
             </div>
           </div>
@@ -104,10 +104,10 @@ export default function Week3Class1() {
           
           <div className="bg-blue-50 p-4 rounded-xl border border-blue-200 mt-4">
             <h3 className="font-bold text-blue-700 mb-2 text-right">🧠 حقیقی زندگی کی مثال:</h3>
-            <p className="text-gray-700 leading-relaxed text-right">
+            <p className="text-gray-700 leading-relaxed text-right" dir="rtl">
               Router کو کسی عمارت کے انٹری گیٹ پر سیکورٹی گارڈ کی طرح سمجھیں۔ وہ صرف لوگوں کو بتاتا ہے:
             </p>
-            <ul className="space-y-2 mt-2 text-right text-gray-700">
+            <ul className="space-y-2 mt-2 text-right text-gray-700" dir="rtl">
               <li>• "آپ باورچی خانے میں جائیں۔"</li>
               <li>• "آپ میٹنگ روم میں جائیں۔"</li>
               <li>• "آپ دفتر میں جائیں۔"</li>
@@ -120,22 +120,22 @@ export default function Week3Class1() {
 
         {/* Section 2 */}
         <section className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
-          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
+          <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right" dir="rtl">
             🧠 2. Controller کیا ہے؟
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
             Controller میں اصل logic ہوتی ہے جو اس وقت run ہونی چاہیے جب کسی route کو request موصول ہو۔
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <div className="bg-green-50 p-4 rounded-xl border border-green-200">
-              <h3 className="font-bold text-green-700 mb-2 text-right">✔ Controllers کیا کرتے ہیں:</h3>
+              <h3 className="font-bold text-green-700 mb-2 text-right" dir="rtl">✔ Controllers کیا کرتے ہیں:</h3>
               <ul className="space-y-2 text-right text-gray-700">
-                <li>• Database سے data fetch کرتے ہیں</li>
-                <li>• Data کو save یا update کرتے ہیں</li>
-                <li>• Input کی validate کرتے ہیں</li>
-                <li>• json response واپس بھیجتے ہیں</li>
-                <li>• Errors handle کرتے ہیں</li>
+                <li dir="rtl">• Database سے data fetch کرتے ہیں</li>
+                <li dir="rtl">• Data کو save یا update کرتے ہیں</li>
+                <li dir="rtl">• Input کی validate کرتے ہیں</li>
+                <li dir="rtl">• json response واپس بھیجتے ہیں</li>
+                <li dir="rtl">• Errors handle کرتے ہیں</li>
               </ul>
             </div>
             
@@ -161,7 +161,7 @@ export default function Week3Class1() {
           <h2 className="text-2xl font-bold text-blue-600 mb-4 text-right">
             🛠 3. Folder Structure (Recommended)
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
             ایک clean Express project کو routes اور controllers کو الگ الگ organize کرنا چاہیے:
           </p>
           
@@ -177,7 +177,7 @@ export default function Week3Class1() {
             </pre>
           </div>
           
-          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
             یہ structure بہتری لاتی ہے:
           </p>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-right">
@@ -370,10 +370,10 @@ app.listen(3000, () => {
             🔄 5. Routers اور Controllers ایک ساتھ کیسے کام کرتے ہیں
           </h2>
           <ol className="space-y-4 text-right text-gray-700 text-lg">
-            <li className="bg-blue-50 p-4 rounded-xl">1. User URL hit کرتا ہے: <code className="bg-blue-100 px-2 py-1 rounded">GET /users</code></li>
-            <li className="bg-green-50 p-4 rounded-xl">2. Router matching route چیک کرتا ہے: <code className="bg-green-100 px-2 py-1 rounded">router.get("/", getAllUsers)</code></li>
-            <li className="bg-yellow-50 p-4 rounded-xl">3. Router اس request کو controller function تک پہنچاتا ہے: <code className="bg-yellow-100 px-2 py-1 rounded">→ getAllUsers()</code></li>
-            <li className="bg-purple-50 p-4 rounded-xl">4. Controller logic execute کرتا ہے اور response بھیجتا ہے۔</li>
+            <li className="bg-blue-50 p-4 rounded-xl" dir="rtl">1. User URL hit کرتا ہے: <code className="bg-blue-100 px-2 py-1 rounded">GET /users</code></li>
+            <li className="bg-green-50 p-4 rounded-xl" dir="rtl">2. Router matching route چیک کرتا ہے: <code className="bg-green-100 px-2 py-1 rounded">router.get("/", getAllUsers)</code></li>
+            <li className="bg-yellow-50 p-4 rounded-xl" dir="rtl">3. Router اس request کو controller function تک پہنچاتا ہے: <code className="bg-yellow-100 px-2 py-1 rounded">→ getAllUsers()</code></li>
+            <li className="bg-purple-50 p-4 rounded-xl" dir="rtl">4. Controller logic execute کرتا ہے اور response بھیجتا ہے۔</li>
           </ol>
           <p className="text-gray-700 leading-relaxed mt-4 text-right text-lg">
             یہ separation ہر چیز کو رکھتی ہے:
@@ -403,23 +403,23 @@ app.listen(3000, () => {
               <tbody className="divide-y divide-gray-200">
                 <tr className="hover:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900 text-right">Clean Code</td>
-                  <td className="px-4 py-3 text-gray-700 text-right">Logic کو route definitions سے الگ کیا جاتا ہے</td>
+                  <td className="px-4 py-3 text-gray-700 text-right" dir="rtl">Logic کو route definitions سے الگ کیا جاتا ہے</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900 text-right">Better Organization</td>
-                  <td className="px-4 py-3 text-gray-700 text-right">بڑی apps کو manage کرنا آسان ہو جاتا ہے</td>
+                  <td className="px-4 py-3 text-gray-700 text-right" dir="rtl">بڑی apps کو manage کرنا آسان ہو جاتا ہے</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900 text-right">Scalability</td>
-                  <td className="px-4 py-3 text-gray-700 text-right">نئے routes اور logic شامل کرنا simple ہو جاتا ہے</td>
+                  <td className="px-4 py-3 text-gray-700 text-right" dir="rtl">نئے routes اور logic شامل کرنا simple ہو جاتا ہے</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900 text-right">Team-friendly</td>
-                  <td className="px-4 py-3 text-gray-700 text-right">Developers routes/controllers پر آزادانہ کام کر سکتے ہیں</td>
+                  <td className="px-4 py-3 text-gray-700 text-right" dir="rtl">Developers routes/controllers پر آزادانہ کام کر سکتے ہیں</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900 text-right">Reusability</td>
-                  <td className="px-4 py-3 text-gray-700 text-right">Controllers کو multiple routes میں reuse کیا جا سکتا ہے</td>
+                  <td className="px-4 py-3 text-gray-700 text-right" dir="rtl">Controllers کو multiple routes میں reuse کیا جا سکتا ہے</td>
                 </tr>
               </tbody>
             </table>
@@ -468,7 +468,7 @@ app.listen(3000, () => {
             </div>
           </div>
           
-          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
             Router URL کو controller سے connect کرتا ہے:
           </p>
           
@@ -499,7 +499,7 @@ app.listen(3000, () => {
             </div>
           </div>
           
-          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg">
+          <p className="text-gray-700 leading-relaxed mb-4 text-right text-lg" dir="rtl">
             Main file route کو load کرتا ہے:
           </p>
           
@@ -539,16 +539,16 @@ app.listen(3000, () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-green-50 p-4 rounded-xl border-2 border-green-500">
               <h3 className="font-bold text-green-700 mb-2 text-center">✔ Router =</h3>
-              <p className="text-gray-700 text-center">URL کی تعریف کرتا ہے اور request کو آگے بھیجتا ہے</p>
+              <p className="text-gray-700 text-center" dir="rtl">URL کی تعریف کرتا ہے اور request کو آگے بھیجتا ہے</p>
             </div>
             <div className="bg-blue-50 p-4 rounded-xl border-2 border-blue-500">
               <h3 className="font-bold text-blue-700 mb-2 text-center">✔ Controller =</h3>
-              <p className="text-gray-700 text-center">اصل logic اور response handle کرتا ہے</p>
+              <p className="text-gray-700 text-center" dir="rtl">اصل logic اور response handle کرتا ہے</p>
             </div>
           </div>
           
           <div className="mt-6 bg-yellow-50 p-4 rounded-xl border border-yellow-200">
-            <p className="text-gray-700 leading-relaxed text-right text-lg font-medium">
+            <p className="text-gray-700 leading-relaxed text-right text-lg font-medium" dir="rtl">
               آپ کو ہمیشہ Express.js میں routes اور controllers کو الگ کرنا چاہیے تاکہ professional اور scalable applications لکھ سکیں۔
             </p>
           </div>

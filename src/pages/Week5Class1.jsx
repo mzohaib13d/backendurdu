@@ -154,10 +154,10 @@ const validatedData = result.data;`
 
         {/* تعارف */}
         <section className="bg-white rounded-2xl shadow-xl p-6 mb-8 border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2" dir="rtl">
             📖 تعارف
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          <p className="text-lg text-gray-700 leading-relaxed mb-4" dir="rtl">
             ان پٹ تصدیق یقینی بناتی ہے کہ صارفین سے آنے والا ڈیٹا (درخواست کا باڈی، کوئری پیرامیٹرز، URL پیرامیٹرز، فارمز، APIs) درست، محفوظ اور متوقع ہو۔
           </p>
           
@@ -390,7 +390,7 @@ const validatedData = result.data;`
             ))}
           </div>
           
-          <p className="text-gray-700 mb-6 text-right leading-relaxed">
+          <p className="text-gray-700 mb-6 text-right leading-relaxed" dir="rtl">
             اگر آپ APIs، SaaS ایپس، ڈیش بورڈز، یا فل اسٹیک پروجیکٹس بنا رہے ہیں، تو زوڈ آپ کی ڈیفالٹ تصدیق لائبریری ہونی چاہیے۔
           </p>
           

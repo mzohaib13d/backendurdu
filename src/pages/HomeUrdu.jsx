@@ -34,16 +34,16 @@ export default function HomeUrdu() {
             dir="rtl"
             className="bg-blue-50 p-6 rounded-xl max-w-3xl mx-auto text-right"
           >
-            <p className="text-gray-800 leading-8 text-base md:text-lg mb-4 break-words">
+            <p className="text-gray-800 leading-8 text-base md:text-lg mb-4 break-words" dir='rtl'>
               یہ ویب سائیٹ Backend Development with Node.js, Express, MongoDB اور TypeScript کورس کے تمام کورس میٹریل اور وسائل (resources) پر مشتمل ہے۔
             </p>
 
-            <p className="text-gray-800 leading-8 text-base md:text-lg mb-4 break-words">
+            <p className="text-gray-800 leading-8 text-base md:text-lg mb-4 break-words" dir='rtl'>
               اس کورس میں، طلباء سرور سائڈ پروگرامنگ (Server-side Programming) میں مہارت حاصل کریں گے،
               جس میں Node.js, Express, MongoDB اور TypeScript استعمال کرتے ہوئے scalable, secure اور production-ready بیک اینڈ سسٹمز تیار کرنا شامل ہے۔
             </p>
 
-            <p className="text-gray-800 leading-8 text-base md:text-lg break-words">
+            <p className="text-gray-800 leading-8 text-base md:text-lg break-words" dir='rtl'>
               کورس مکمل کرنے کے بعد، سیکھنے والے مکمل بیک اینڈ سسٹمز کو design, develop اور deploy کرنے کے قابل ہوں گے،
               اور انڈسٹری کے بہترین طریقوں (best practices) کے مطابق Full-Stack Web Applications کی backend architecture بنا سکیں گے۔
             </p>
@@ -56,18 +56,18 @@ export default function HomeUrdu() {
             📋 ضروری شرائط (Prerequisites)
           </h3>
           <div className="bg-green-50 p-6 rounded-xl">
-            <p className="text-gray-800 text-lg mb-4">کورس شروع کرنے سے پہلے یہ چیزیں لازمی ہونی چاہئیں:</p>
+            <p className="text-gray-800 text-lg mb-4" dir="rtl">کورس شروع کرنے سے پہلے یہ چیزیں لازمی ہونی چاہئیں:</p>
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-gray-800 text-lg">
-                <span className="text-2xl text-green-600">✔️</span>
+                <span className="text-2xl text-green-600" dir="rtl">✔️</span>
                 <span className="font-medium">آپ نے Frontend Development with React مکمل کیا ہو</span>
               </li>
               <li className="flex items-center gap-3 text-gray-800 text-lg">
-                <span className="text-2xl text-green-600">✔️</span>
+                <span className="text-2xl text-green-600" dir="rtl">✔️</span>
                 <span className="font-medium">آپ کو JavaScript ES6+ کی مضبوط سمجھ ہو</span>
               </li>
               <li className="flex items-center gap-3 text-gray-800 text-lg">
-                <span className="text-2xl text-green-600">✔️</span>
+                <span className="text-2xl text-green-600" dir="rtl">✔️</span>
                 <span className="font-medium">ویب ڈیولپمنٹ کے بنیادی concepts کی سمجھ ہو</span>
               </li>
             </ul>
@@ -80,15 +80,15 @@ export default function HomeUrdu() {
             🎯 سیکھنے کے نتائج (Learning Outcomes)
           </h3>
           <div className="bg-purple-50 p-6 rounded-xl">
-            <p className="text-gray-800 text-lg mb-4">کورس مکمل کرنے کے بعد آپ یہ تمام کام کرنے کے قابل ہوں گے:</p>
+            <p className="text-gray-800 text-lg mb-4" dir="rtl">کورس مکمل کرنے کے بعد آپ یہ تمام کام کرنے کے قابل ہوں گے:</p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-start gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-xl mt-1">⚙️</span>
-                <span>Node.js + Express سرور کو TypeScript کے ساتھ سیٹ اپ اور کنفیگر کرنا</span>
+                <span dir="rtl">Node.js + Express سرور کو TypeScript کے ساتھ سیٹ اپ اور کنفیگر کرنا</span>
               </div>
               <div className="flex items-start gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-xl mt-1">🗂</span>
-                <span>اسکیل ایبل ڈیٹا بیس اسکیماز اور ERD ڈایاگرامز ڈیزائن کرنا</span>
+                <span dir="rtl">اسکیل ایبل ڈیٹا بیس اسکیماز اور ERD ڈایاگرامز ڈیزائن کرنا</span>
               </div>
               <div className="flex items-start gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-xl mt-1">🔐</span>
@@ -96,23 +96,23 @@ export default function HomeUrdu() {
               </div>
               <div className="flex items-start gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-xl mt-1">⚡</span>
-                <span>MongoDB کو Mongoose کے ساتھ CRUD آپریشنز کے لیے انٹیگریٹ کرنا</span>
+                <span dir="rtl">MongoDB کو Mongoose کے ساتھ CRUD آپریشنز کے لیے انٹیگریٹ کرنا</span>
               </div>
               <div className="flex items-start gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-xl mt-1">🧠</span>
-                <span>Redis کے ذریعے کیشنگ اسٹریٹیجیز اپلائی کرنا تاکہ پرفارمنس بہتر ہو</span>
+                <span dir="rtl">Redis کے ذریعے کیشنگ اسٹریٹیجیز اپلائی کرنا تاکہ پرفارمنس بہتر ہو</span>
               </div>
               <div className="flex items-start gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-xl mt-1">🕒</span>
-                <span>Cron Jobs کے ذریعے پسِ منظر میں چلنے والے کام شیڈول کرنا</span>
+                <span dir="rtl" className="text-right"> Cron Jobs کے ذریعے پسِ منظر میں چلنے والے کام شیڈول کرنا</span>
               </div>
               <div className="flex items-start gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg md:col-span-2">
                 <span className="text-xl mt-1">📁</span>
-                <span>فائل اپلوڈ، پیجینیشن اور سرچ فیچرز بنانا</span>
+                <span dir="rtl">فائل اپلوڈ، پیجینیشن اور سرچ فیچرز بنانا</span>
               </div>
               <div className="flex items-start gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg md:col-span-2">
                 <span className="text-xl mt-1">🚀</span>
-                <span>پروڈکشن-ریڈی بیک اینڈ کو صحیح کنفیگریشن مینجمنٹ کے ساتھ ڈپلائے کرنا</span>
+                <span dir="rtl" className="text-right">پروڈکشن-ریڈی بیک اینڈ کو صحیح کنفیگریشن مینجمنٹ کے ساتھ ڈپلائے کرنا</span>
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function HomeUrdu() {
 
         {/* Course Outline Section */}
         <section className="mb-8 bg-white shadow-xl rounded-3xl p-8 md:p-12">
-          <h3 className="text-2xl font-bold mb-4 text-amber-700 flex items-center gap-2">
+          <h3 className="text-2xl font-bold mb-4 text-amber-700 flex items-center gap-2" dir="rtl">
             🧭 کورس آؤٹ لائن (Course Outline)
           </h3>
           <div className="overflow-x-auto rounded-xl border border-gray-200">
@@ -156,13 +156,13 @@ export default function HomeUrdu() {
             🧱 فائنل پراجیکٹ (Final Project)
           </h3>
           <div className="bg-red-50 p-6 rounded-xl">
-            <p className="text-gray-800 text-lg mb-4">
+            <p className="text-gray-800 text-lg mb-4" dir="rtl">
               فائنل پراجیکٹ میں طلباء ایک مکمل پروڈکشن ریڈی بیک اینڈ سسٹم بنائیں گے، جس میں شامل ہوگا:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-center gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-green-600 text-xl">✔️</span>
-                <span>مکمل TypeScript انٹیگریشن</span>
+                <span dir="rtl">مکمل TypeScript انٹیگریشن</span>
               </div>
               <div className="flex items-center gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-green-600 text-xl">✔️</span>
@@ -170,7 +170,7 @@ export default function HomeUrdu() {
               </div>
               <div className="flex items-center gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-green-600 text-xl">✔️</span>
-                <span>JWT کے ساتھ Authentication & Authorization</span>
+                <span dir="rtl">JWT کے ساتھ Authentication & Authorization</span>
               </div>
               <div className="flex items-center gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-green-600 text-xl">✔️</span>
@@ -182,15 +182,15 @@ export default function HomeUrdu() {
               </div>
               <div className="flex items-center gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-green-600 text-xl">✔️</span>
-                <span>فائل اپلوڈز اور دیگر ایڈوانس فیچرز</span>
+                <span dir="rtl">فائل اپلوڈز اور دیگر ایڈوانس فیچرز</span>
               </div>
               <div className="flex items-center gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg">
                 <span className="text-green-600 text-xl">✔️</span>
-                <span>ڈپلائمنٹ اور ماحول کی مینجمنٹ (Environment Management)</span>
+                <span dir="rtl">ڈپلائمنٹ اور ماحول کی مینجمنٹ (Environment Management)</span>
               </div>
               <div className="flex items-center gap-3 text-gray-800 text-lg bg-white p-4 rounded-lg md:col-span-2">
                 <span className="text-green-600 text-xl">✔️</span>
-                <span>Github ریپوزیٹری — کوڈ واک تھرو + ERD ڈایاگرام کے ساتھ</span>
+                <span dir="rtl">Github ریپوزیٹری — کوڈ واک تھرو + ERD ڈایاگرام کے ساتھ</span>
               </div>
             </div>
           </div>
@@ -262,27 +262,27 @@ export default function HomeUrdu() {
             🧠 عملی مشق (Hands-on Practice)
           </h3>
           <div className="bg-pink-50 p-6 rounded-xl">
-            <p className="text-gray-800 text-lg mb-4">ہر ہفتے طلباء درج ذیل عملی مشقیں کریں گے:</p>
+            <p className="text-gray-800 text-lg mb-4" dir="rtl">ہر ہفتے طلباء درج ذیل عملی مشقیں کریں گے:</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="bg-white p-4 rounded-lg border border-pink-200 flex items-center gap-3">
                 <span className="text-green-600 text-xl">✔️</span>
-                <p className="text-gray-800">REST APIs بنا نا اور ٹیسٹ کرنا</p>
+                <p className="text-gray-800" dir="rtl">REST APIs بنا نا اور ٹیسٹ کرنا</p>
               </div>
               <div className="bg-white p-4 rounded-lg border border-pink-200 flex items-center gap-3">
                 <span className="text-green-600 text-xl">✔️</span>
-                <p className="text-gray-800">ڈیٹا بیس اسکیما تیار کرنا</p>
+                <p className="text-gray-800" dir="rtl">ڈیٹا بیس اسکیما تیار کرنا</p>
               </div>
               <div className="bg-white p-4 rounded-lg border border-pink-200 flex items-center gap-3">
                 <span className="text-green-600 text-xl">✔️</span>
-                <p className="text-gray-800">Authentication Flow نافذ کرنا</p>
+                <p className="text-gray-800" dir="rtl">Authentication Flow نافذ کرنا</p>
               </div>
               <div className="bg-white p-4 rounded-lg border border-pink-200 flex items-center gap-3">
                 <span className="text-green-600 text-xl">✔️</span>
-                <p className="text-gray-800">Custom Middleware لکھنا</p>
+                <p className="text-gray-800" dir="rtl">Custom Middleware لکھنا</p>
               </div>
               <div className="bg-white p-4 rounded-lg border border-pink-200 flex items-center gap-3">
                 <span className="text-green-600 text-xl">✔️</span>
-                <p className="text-gray-800">کیشنگ کے ذریعے پرفارمنس بہتر بنانا</p>
+                <p className="text-gray-800" dir="rtl">کیشنگ کے ذریعے پرفارمنس بہتر بنانا</p>
               </div>
               <div className="bg-white p-4 rounded-lg border border-pink-200 flex items-center gap-3">
                 <span className="text-green-600 text-xl">✔️</span>
@@ -297,7 +297,7 @@ export default function HomeUrdu() {
           <p className="text-lg">
             <span className="font-bold">فائل:</span> HomeUrdu.jsx
           </p>
-          <p className="mt-2 text-sm">مکمل طور پر Urdu رُسم الخط میں ترتیب دیا گیا</p>
+          <p className="mt-2 text-sm" dir="rtl">مکمل طور پر Urdu رُسم الخط میں ترتیب دیا گیا</p>
         </footer>
       </div>
     </main>

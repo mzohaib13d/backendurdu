@@ -23,13 +23,14 @@ import Week8Class2 from "./pages/Week8Class2";
 function App() {
   const [showMouseTrail, setShowMouseTrail] = useState(true);
 
+  // 🚨 Hook must be here (inside component but before return)
+  usePreventDevTools();
+
   return (
     <BrowserRouter>
-     usePreventDevTools();
-      {/* Simple Green Mouse Trail */}
+
       <MouseTrail enabled={showMouseTrail} />
-      
-      {/* Toggle Button for Mouse Trail */}
+
       <button
         onClick={() => setShowMouseTrail(!showMouseTrail)}
         className="absolute top-28 right-4 z-50 bg-gradient-to-r from-green-500 to-emerald-500 text-white 
@@ -42,12 +43,7 @@ function App() {
           <>
             <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
             <span className="text-sm font-medium hidden sm:inline">Trail On</span>
-            <svg 
-              className="w-5 h-5" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="10" strokeWidth="2" />
               <circle cx="12" cy="12" r="3" strokeWidth="2" fill="currentColor" />
             </svg>
@@ -56,19 +52,13 @@ function App() {
           <>
             <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
             <span className="text-sm font-medium hidden sm:inline">Trail Off</span>
-            <svg 
-              className="w-5 h-5" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="10" strokeWidth="2" />
               <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" strokeWidth="2" />
             </svg>
           </>
         )}
-        
-        {/* Tooltip on hover */}
+
         <div className="absolute -top-10 right-0 bg-gray-800 text-white text-xs px-3 py-2 rounded-lg 
                       opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
           Click to {showMouseTrail ? "disable" : "enable"} mouse trail
@@ -76,7 +66,7 @@ function App() {
       </button>
 
       <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
-        {/* Main Content - Comes FIRST for proper RTL layout */}
+
         <main className="flex-1 order-1 md:order-1">
           <div className="p-4 md:p-6">
             <Routes>
@@ -99,13 +89,11 @@ function App() {
             </Routes>
           </div>
         </main>
-        
-        {/* Sidebar - Comes SECOND, will appear on right */}
+
         <div className="order-2 md:order-2">
           <SidebarUrdu />
         </div>
       </div>
-      
     </BrowserRouter>
   );
 }

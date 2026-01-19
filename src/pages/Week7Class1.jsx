@@ -356,8 +356,8 @@ export default cloudinary;`
               <Upload className="w-6 h-6 text-teal-600" />
             </div>
             <div className="flex-1">
-              <h2 className="text-2xl font-bold text-gray-800 mb-3">🧠 تعارف</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <h2 className="text-2xl font-bold text-gray-800 mb-3" dir="rtl">🧠 تعارف</h2>
+              <p className="text-gray-700 leading-relaxed mb-4" dir="rtl">
                 فائل اپ لوڈنگ ایک بہت اہم بیک اینڈ خصوصیت ہے۔ تقریباً ہر حقیقی دنیا کی ایپلی کیشن کو فائل اپ لوڈز کی ضرورت ہوتی ہے، جیسے:
               </p>
             </div>
@@ -378,7 +378,7 @@ export default cloudinary;`
           </div>
           
           <div className="mt-6 bg-gradient-to-r from-teal-100 to-cyan-100 rounded-xl p-5 border border-teal-300">
-            <h3 className="font-bold text-gray-800 mb-3">اس گائیڈ میں شامل ہیں:</h3>
+            <h3 className="font-bold text-gray-800 mb-3" dir="rtl">اس گائیڈ میں شامل ہیں:</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
                 'Multipart فارم ڈیٹا',
@@ -400,13 +400,13 @@ export default cloudinary;`
 
         {/* Multipart Form Data */}
         <section className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl shadow-xl p-8 mb-8 border border-cyan-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2" dir="rtl">
             <Database className="w-6 h-6 text-cyan-600" />
             🌐 Multipart Form Data کیا ہے؟
           </h2>
           
           <div className="bg-white rounded-xl p-5 mb-6 border border-cyan-300">
-            <p className="text-gray-700 text-lg mb-4">
+            <p className="text-gray-700 text-lg mb-4" dir="rtl">
               عام طور پر، APIs JSON ڈیٹا قبول کرتی ہیں۔ تاہم، جب ہم فائلز + ٹیکسٹ ڈیٹا بھیجنا چاہتے ہیں، تو ہم استعمال کرتے ہیں:
             </p>
             
@@ -427,11 +427,11 @@ export default cloudinary;`
               </div>
               
               <div className="bg-teal-100 rounded-lg p-4">
-                <h4 className="font-bold text-teal-800 mb-2">کیوں Multipart کہتے ہیں؟</h4>
-                <p className="text-gray-700">
+                <h4 className="font-bold text-teal-800 mb-2" dir="rtl">کیوں Multipart کہتے ہیں؟</h4>
+                <p className="text-gray-700" dir="rtl">
                   یہ ڈیٹا متعدد حصوں میں تقسیم ہوتا ہے، اس لیے اسے multipart کہا جاتا ہے۔
                 </p>
-                <div className="mt-3 bg-gray-900 rounded p-3">
+                <div className="mt-3 bg-gray-900 rounded p-3" dir="rtl">
                   <code className="text-teal-300 font-mono font-bold">
                     📌 Multer بیک اینڈ میں اس multipart ڈیٹا کو ہینڈل کرتا ہے۔
                   </code>
@@ -443,7 +443,7 @@ export default cloudinary;`
 
         {/* Multer انٹروڈکشن */}
         <section className="bg-white rounded-2xl shadow-xl p-6 mb-8 border border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2" dir="rtl">
             <Upload className="w-6 h-6 text-teal-600" />
             📦 Multer – فائل اپ لوڈ مڈل ویئر
           </h2>
@@ -456,7 +456,7 @@ export default cloudinary;`
                 </div>
                 <h4 className="font-bold text-teal-800">ہینڈل کرتا ہے</h4>
               </div>
-              <p className="text-gray-700">multipart/form-data کو پروسیس کرتا ہے</p>
+              <p className="text-gray-700" dir="rtl">multipart/form-data کو پروسیس کرتا ہے</p>
             </div>
             
             <div className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-5 border border-cyan-200">
@@ -525,7 +525,7 @@ export default cloudinary;`
 
         {/* Postman ٹیسٹنگ */}
         <section className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl shadow-xl p-8 mb-8 border border-blue-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2" dir="rtl">
             <Cloud className="w-6 h-6 text-blue-600" />
             🧪 Postman کے ساتھ ٹیسٹنگ
           </h2>
@@ -606,12 +606,12 @@ export default cloudinary;`
           
           <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-xl p-5 border border-purple-300">
             <div className="flex items-start gap-3">
-              <div className="bg-purple-500 text-white p-3 rounded-lg">
+              <div className="bg-purple-500 text-white p-3 rounded-lg" dir="rtl">
                 👉
               </div>
-              <div>
-                <h4 className="font-bold text-gray-800 mb-2">حل: کلاؤڈ اسٹوریج</h4>
-                <p className="text-gray-700">
+              <div className="flex-1">
+                <h4 className="font-bold text-gray-800 mb-2 text-right" dir="rtl">حل: کلاؤڈ اسٹوریج</h4>
+                <p className="text-gray-700 text-right" dir="rtl">
                   پیداوار کے لیے مقامی اسٹوریج تجویز نہیں ہے۔ Cloudinary یا AWS S3 استعمال کریں۔
                 </p>
               </div>
@@ -621,7 +621,7 @@ export default cloudinary;`
 
         {/* بہترین طریقے */}
         <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl shadow-xl p-8 mb-8 border border-amber-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2" dir="rtl">
             <Shield className="w-6 h-6 text-amber-600" />
             🔐 سیکورٹی کے بہترین طریقے
           </h2>
@@ -638,7 +638,7 @@ export default cloudinary;`
           </div>
           
           <div className="mt-8 bg-gradient-to-r from-amber-100 to-orange-100 rounded-xl p-5 border border-amber-400">
-            <h3 className="font-bold text-gray-800 mb-3">حقیقی دنیا کے استعمالات:</h3>
+            <h3 className="font-bold text-gray-800 mb-3" dir="rtl">حقیقی دنیا کے استعمالات:</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
                 'صارف پروفائل تصاویر',
@@ -663,7 +663,7 @@ export default cloudinary;`
             🏁 خلاصہ
           </h2>
           
-          <p className="text-gray-700 mb-6 text-center text-lg">
+          <p className="text-gray-700 mb-6 text-center text-lg" dir="rtl">
             یہ گائیڈ کا احاطہ کرتی ہے:
           </p>
           
@@ -687,7 +687,7 @@ export default cloudinary;`
             ))}
           </div>
           
-          <div className="mt-8 p-5 bg-white rounded-xl border border-cyan-300">
+          <div className="mt-8 p-5 bg-white rounded-xl border border-cyan-300" dir="rtl">
             <h4 className="font-bold text-gray-800 mb-3">یہ موضوع ہر بیک اینڈ beginner کے لیے لازمی ہے اور وسیع پیمانے پر استعمال ہوتا ہے:</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">

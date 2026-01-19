@@ -104,18 +104,18 @@ app.put("/users/:id", async (req, res) => {
 app.delete("/users/:id", async (req, res) => {
   await User.findByIdAndDelete(req.params.id);
   res.json({ message: "User deleted successfully" });
-});`
+});`,
   };
 
   return (
     <div className="p-4 md:p-6 bg-gradient-to-br from-blue-50 to-cyan-50 min-h-screen rtl">
-         <ScrollToTopButton />
+      <ScrollToTopButton />
       {/* Header */}
       <div className="mb-8 text-center">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-800 mb-2">
           📘 MongoDB کے ساتھ Express.js
         </h1>
-        <p className="text-gray-600 text-sm md:text-base">
+        <p className="text-gray-600 text-sm md:text-base" dir="rtl">
           ہفتہ 4 - کلاس 1: NoSQL ڈیٹابیس اور Document-Based Storage
         </p>
       </div>
@@ -123,9 +123,13 @@ app.delete("/users/:id", async (req, res) => {
       {/* Introduction Section */}
       <div className="bg-white rounded-xl shadow-lg p-4 md:p-6 mb-6 border border-blue-200">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl md:text-2xl font-bold text-blue-700">
+          <h2
+            className="text-xl md:text-2xl font-bold text-blue-700 text-center"
+            dir="rtl"
+          >
             🧠 MongoDB کا تعارف: NoSQL ڈیٹابیسز اور Document-Based Storage
           </h2>
+
           <button
             onClick={() => handleCopy(codeBlocks.intro, "intro")}
             className="flex items-center justify-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded-lg transition-colors text-xs sm:gap-2 sm:px-3 sm:py-1 sm:text-sm"
@@ -274,10 +278,10 @@ app.delete("/users/:id", async (req, res) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           <div className="bg-yellow-50 rounded-lg p-4">
-            <h3 className="font-bold text-yellow-700 mb-2">
+            <h3 className="font-bold text-yellow-700 mb-2" dir="rtl">
               1️⃣ MongoDB Atlas (کلاؤڈ)
             </h3>
-            <ul className="space-y-2 text-right text-gray-700">
+            <ul className="space-y-2 text-right text-gray-700" dir="rtl">
               <li>• MongoDB Atlas پر جائیں اور سائن اپ کریں</li>
               <li>• مفت cluster بنائیں (M0 tier)</li>
               <li>• ڈیٹابیس یوزر شامل کریں</li>
@@ -287,10 +291,10 @@ app.delete("/users/:id", async (req, res) => {
           </div>
 
           <div className="bg-green-50 rounded-lg p-4">
-            <h3 className="font-bold text-green-700 mb-2">
+            <h3 className="font-bold text-green-700 mb-2" dir="rtl">
               2️⃣ لوکل MongoDB انسٹالیشن
             </h3>
-            <ul className="space-y-2 text-right text-gray-700">
+            <ul className="space-y-2 text-right text-gray-700" dir="rtl">
               <li>• MongoDB Community Edition ڈاؤن لوڈ کریں</li>
               <li>• MongoDB انسٹال کریں</li>
               <li>• mongod سروس شروع کریں</li>
@@ -303,7 +307,7 @@ app.delete("/users/:id", async (req, res) => {
       {/* Express.js Connection */}
       <div className="bg-white rounded-xl shadow-lg p-4 md:p-6 mb-6 border border-blue-200">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl md:text-2xl font-bold text-blue-700">
+          <h2 className="text-xl md:text-2xl font-bold text-blue-700" dir="rtl">
             ⚡ Express.js کے ساتھ MongoDB کا استعمال
           </h2>
           <button
@@ -347,7 +351,7 @@ app.delete("/users/:id", async (req, res) => {
       {/* Schema Design */}
       <div className="bg-white rounded-xl shadow-lg p-4 md:p-6 mb-6 border border-purple-200">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl md:text-2xl font-bold text-purple-700">
+          <h2 className="text-xl md:text-2xl font-bold text-purple-700" dir="rtl">
             🧱 Mongoose کے ساتھ ڈیٹا ماڈلنگ اور Schema ڈیزائن
           </h2>
           <button
@@ -370,7 +374,7 @@ app.delete("/users/:id", async (req, res) => {
 
         {/* Schema کوڈ block دکھائیں */}
         <div className="bg-purple-50 rounded-lg p-4 mb-4">
-          <h3 className="font-bold text-purple-700 mb-2 text-right">
+          <h3 className="font-bold text-purple-700 mb-2 text-right" dir="rtl">
             User Schema کا مکمل کوڈ
           </h3>
           <pre className="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto text-sm md:text-base whitespace-pre-wrap">
@@ -465,25 +469,33 @@ app.delete("/users/:id", async (req, res) => {
           <div className="bg-green-50 rounded-lg p-4 text-center">
             <div className="text-2xl mb-2">✨</div>
             <h3 className="font-bold text-green-700 mb-2">Create</h3>
-            <p className="text-gray-600 text-sm">نیا ڈیٹا داخل کریں</p>
+            <p className="text-gray-600 text-sm" dir="rtl">
+              نیا ڈیٹا داخل کریں
+            </p>
           </div>
 
           <div className="bg-blue-50 rounded-lg p-4 text-center">
             <div className="text-2xl mb-2">🔍</div>
             <h3 className="font-bold text-blue-700 mb-2">Read</h3>
-            <p className="text-gray-600 text-sm">ڈیٹا پڑھیں اور دریافت کریں</p>
+            <p className="text-gray-600 text-sm" dir="rtl">
+              ڈیٹا پڑھیں اور دریافت کریں
+            </p>
           </div>
 
           <div className="bg-yellow-50 rounded-lg p-4 text-center">
             <div className="text-2xl mb-2">✏️</div>
             <h3 className="font-bold text-yellow-700 mb-2">Update</h3>
-            <p className="text-gray-600 text-sm">موجودہ ڈیٹا اپ ڈیٹ کریں</p>
+            <p className="text-gray-600 text-sm" dir="rtl">
+              موجودہ ڈیٹا اپ ڈیٹ کریں
+            </p>
           </div>
 
           <div className="bg-red-50 rounded-lg p-4 text-center">
             <div className="text-2xl mb-2">🗑️</div>
             <h3 className="font-bold text-red-700 mb-2">Delete</h3>
-            <p className="text-gray-600 text-sm">ڈیٹا حذف کریں</p>
+            <p className="text-gray-600 text-sm" dir="rtl">
+              ڈیٹا حذف کریں
+            </p>
           </div>
         </div>
       </div>
@@ -500,7 +512,7 @@ app.delete("/users/:id", async (req, res) => {
           </div>
           <div className="bg-white rounded-lg p-3 shadow">
             <h4 className="font-bold text-gray-700 mb-1">Indexes بنائیں</h4>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 text-sm" dir="rtl">
               کثرت سے استعمال ہونے والے فیلڈز کے لیے
             </p>
           </div>
@@ -514,7 +526,9 @@ app.delete("/users/:id", async (req, res) => {
             <h4 className="font-bold text-gray-700 mb-1">
               TypeScript interfaces
             </h4>
-            <p className="text-gray-600 text-sm">ٹائپ سیفٹی کے لیے</p>
+            <p className="text-gray-600 text-sm" dir="rtl">
+              ٹائپ سیفٹی کے لیے
+            </p>
           </div>
           <div className="bg-white rounded-lg p-3 shadow">
             <h4 className="font-bold text-gray-700 mb-1">
@@ -524,7 +538,9 @@ app.delete("/users/:id", async (req, res) => {
           </div>
           <div className="bg-white rounded-lg p-3 shadow">
             <h4 className="font-bold text-gray-700 mb-1">BSON سمجھیں</h4>
-            <p className="text-gray-600 text-sm">JSON سے بڑھ کر ڈیٹا سٹوریج</p>
+            <p className="text-gray-600 text-sm" dir="rtl">
+              JSON سے بڑھ کر ڈیٹا سٹوریج
+            </p>
           </div>
         </div>
       </div>
@@ -542,4 +558,4 @@ app.delete("/users/:id", async (req, res) => {
   );
 };
 
-export default Week4Class1;                                                                                                                                                                                                                                                                                                                                                   
+export default Week4Class1;

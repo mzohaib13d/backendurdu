@@ -236,20 +236,20 @@ mongoose.connect(process.env.MONGO_URI!)
               <Clock className="w-6 h-6 text-teal-600" />
             </div>
             <div className="flex-1">
-              <h2 className="text-2xl font-bold text-gray-800 mb-3 leading-relaxed">حقیقی دنیا کی ایپلی کیشنز میں</h2>
-              <p className="text-gray-700 leading-relaxed">
+              <h2 className="text-2xl font-bold text-gray-800 mb-3 leading-relaxed" dir="rtl">حقیقی دنیا کی ایپلی کیشنز میں</h2>
+              <p className="text-gray-700 leading-relaxed" dir="rtl">
                 کچھ کام خودکار طور پر شیڈول پر چلنے چاہئیں، بغیر صافر کے تعامل کے۔ یہ کام کرون جابز کے ذریعے ہینڈل کیے جاتے ہیں۔
               </p>
             </div>
           </div>
           
           <div className="mt-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2" dir="rtl">
               <Calendar className="w-5 h-5 text-teal-600" />
               عام استعمالات
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" dir="rtl">
               {cronUseCases.map((useCase, index) => (
                 <div key={index} className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-4 border border-teal-200 hover:shadow-md transition-shadow">
                   <div className="flex items-start gap-3">
@@ -267,20 +267,20 @@ mongoose.connect(process.env.MONGO_URI!)
 
         {/* کرون جاب کیا ہے؟ */}
         <section className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl shadow-xl p-8 mb-8 border border-emerald-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2" dir="rtl">
             <Clock className="w-6 h-6 text-emerald-600" />
             🧠 کرون جاب کیا ہے؟
           </h2>
           
           <div className="bg-white rounded-xl p-5 mb-6 border border-emerald-300">
-            <p className="text-gray-700 text-lg mb-4">
+            <p className="text-gray-700 text-lg mb-4" dir="rtl">
               کرون جاب ایک کام ہے جو مخصوص وقت یا وقفے پر خودکار طور پر چلتا ہے۔
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-gradient-to-r from-emerald-100 to-teal-100 rounded-lg p-4">
                 <h4 className="font-bold text-emerald-800 mb-2">مثالیں:</h4>
-                <ul className="space-y-2">
+                <ul className="space-y-2" dir="rtl">
                   <li className="flex items-center gap-2">
                     <span className="text-emerald-600">•</span>
                     <span>ہر دن رات 12 بجے</span>
@@ -307,7 +307,7 @@ mongoose.connect(process.env.MONGO_URI!)
                     👉 node-cron
                   </p>
                 </div>
-                <p className="text-gray-700 text-sm mt-2">
+                <p className="text-gray-700 text-sm mt-2" dir="rtl">
                   سب سے مقبول لائبریری کرون جابز کے لیے
                 </p>
               </div>
@@ -391,14 +391,14 @@ mongoose.connect(process.env.MONGO_URI!)
 
         {/* پیداوار کے لیے نکات */}
         <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl shadow-xl p-8 mb-8 border border-amber-200">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2" dir="rtl">
             <AlertCircle className="w-6 h-6 text-amber-600" />
             ⚠️ پیداوار کے لیے اہم نکات
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-bold text-gray-800 mb-4 text-lg">ضروری معلومات:</h3>
+              <h3 className="font-bold text-gray-800 mb-4 text-lg" dir="rtl">ضروری معلومات:</h3>
               <div className="space-y-4">
                 {productionTips.map((tip, index) => (
                   <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-xl border border-amber-300">
@@ -410,21 +410,21 @@ mongoose.connect(process.env.MONGO_URI!)
             </div>
             
             <div className="bg-gradient-to-r from-amber-100 to-orange-100 rounded-xl p-5 border border-amber-300">
-              <h3 className="font-bold text-gray-800 mb-3 text-lg leading-relaxed md:leading-[1.9]  sm:leading-[2.2]">کرون جابز کے فوائد:</h3>
+              <h3 className="font-bold text-gray-800 mb-3 text-lg leading-relaxed md:leading-[1.9]  sm:leading-[2.2]" dir="rtl">کرون جابز کے فوائد:</h3>
               <ul className="space-y-3">
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-2" dir="rtl">
                   <span className="text-green-600 mt-1">✓</span>
                   <span className="text-gray-700">خودکار طریقے سے کام کرتی ہیں</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-2" dir="rtl">
                   <span className="text-green-600 mt-1">✓</span>
                   <span className="text-gray-700">وقت کی بچت</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-2" dir="rtl">
                   <span className="text-green-600 mt-1">✓</span>
                   <span className="text-gray-700">دورانِ نظام صاف ستھرائی</span>
                 </li>
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-2" dir="rtl">
                   <span className="text-green-600 mt-1">✓</span>
                   <span className="text-gray-700">مستقل نوٹیفیکیشنز</span>
                 </li>
@@ -463,7 +463,7 @@ mongoose.connect(process.env.MONGO_URI!)
           </div>
           
           <div className="mt-8 p-5 bg-white rounded-xl border border-emerald-300">
-            <h4 className="font-bold text-gray-800 mb-3">کرون جابز ضروری ہیں اسکیل ایبل، پیداوار-گریڈ ایپلی کیشنز کے لیے:</h4>
+            <h4 className="font-bold text-gray-800 mb-3 leading-relaxed" dir="rtl">کرون جابز ضروری ہیں اسکیل ایبل، پیداوار-گریڈ ایپلی کیشنز کے لیے:</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
                 'SaaS پلیٹ فارمز',
